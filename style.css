@@ -135,7 +135,7 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--background-color);
-  font: 400 18px/26px "Alegreya Sans";
+  font: 400 16px/24px "Alegreya Sans";
   color: var(--text-color);
   letter-spacing: 0.03em;
   min-height: calc(100vh - 72px);
@@ -159,8 +159,8 @@ h1 {
 }
 
 h2 {
-  font: normal 400 28px/36px "Alegreya Sans";
-  margin: 36px 0 0;
+  font: normal 400 24px/32px "Alegreya Sans";
+  margin: 32px 0 0;
   color: var(--headings-color);
 }
 
