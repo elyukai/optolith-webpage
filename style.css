@@ -130,7 +130,7 @@
 
 body {
   margin: 0;
-  padding: 36px;
+  padding: 100px 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,7 +138,7 @@ body {
   font: 400 16px/24px "Alegreya Sans";
   color: var(--text-color);
   letter-spacing: 0.03em;
-  min-height: calc(100vh - 72px);
+  min-height: calc(100vh - 200px);
 }
 
 body > div {
