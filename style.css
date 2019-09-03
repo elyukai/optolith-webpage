@@ -147,9 +147,20 @@ body > div {
   align-items: center;
 }
 
-img#logo {
+#logo {
   height: 120px;
   width: 120px;
+}
+
+svg#logo .cls-1 {
+  fill: #836b3e;
+}
+
+svg#logo .cls-2 {
+  fill: none;
+  stroke: #836b3e;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
 }
 
 h1 {
