@@ -1,5 +1,0 @@
-Header set X-Content-Type-Options "nosniff"
-Header set Content-Security-Policy "default-src 'none'; img-src 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'self'"
-Header set X-UA-Compatible "ie=edge"
-Header set X-Frame-Options "SAMEORIGIN"
-Header set X-XSS-Protection "1; mode=block"
