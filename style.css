@@ -152,17 +152,6 @@ body > div {
   width: 120px;
 }
 
-svg#logo .cls-1 {
-  fill: #836b3e;
-}
-
-svg#logo .cls-2 {
-  fill: none;
-  stroke: #836b3e;
-  stroke-miterlimit: 10;
-  stroke-width: 2px;
-}
-
 h1 {
   font: italic normal 400 44px/56px "Alegreya Sans";
   margin: 68px 0 0;
