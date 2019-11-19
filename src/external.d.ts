@@ -1,14 +1,20 @@
 declare module 'koa-nunjucks-async' {
-  import Application from "koa";
+  import Koa from "koa";
   import { ConfigureOptions } from "nunjucks";
 
-  export interface KoaNunjucksOptions {
+  interface KoaNunjucksOptions {
     opts: ConfigureOptions
     ext: string
   }
 
-  export default function <StateT = Application.DefaultState, CustomT = Application.DefaultContext> (
+  function KoaNunjucksAsync <StateT = Koa.DefaultState, CustomT = Koa.DefaultContext> (
     path: string,
     nunjucks_options: KoaNunjucksOptions
-  ): Application.Middleware<StateT, CustomT>
+  ): Koa.Middleware<StateT, CustomT>
+
+  namespace KoaNunjucksAsync {
+    export interface Options extends KoaNunjucksOptions { }
+  }
+
+  export = KoaNunjucksAsync
 }

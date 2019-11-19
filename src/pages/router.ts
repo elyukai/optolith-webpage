@@ -1,4 +1,4 @@
-import Router from "@koa/router";
+import Router = require ("@koa/router");
 import { Context, State } from "../server.js";
 import { about, home } from "./route-controller.js";
 

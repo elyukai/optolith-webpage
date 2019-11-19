@@ -1,7 +1,7 @@
-import nunjucksAsync, { KoaNunjucksOptions } from "koa-nunjucks-async";
+import nunjucksAsync = require ("koa-nunjucks-async");
 import { Context, State } from "../server";
 
-const nunjucksOptions: KoaNunjucksOptions = {
+const nunjucksOptions: nunjucksAsync.Options = {
   opts: {
     autoescape: true,
     watch: true

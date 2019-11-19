@@ -1,4 +1,6 @@
-import nunjucksAsync from "koa-nunjucks-async";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const nunjucksAsync = require("koa-nunjucks-async");
 const nunjucksOptions = {
     opts: {
         autoescape: true,
@@ -6,4 +8,4 @@ const nunjucksOptions = {
     },
     ext: ".njk"
 };
-export const nunjucks = (relativePath) => nunjucksAsync(relativePath, nunjucksOptions);
+exports.nunjucks = (relativePath) => nunjucksAsync(relativePath, nunjucksOptions);

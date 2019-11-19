@@ -1,6 +1,8 @@
-import Router from "@koa/router";
-import { about, home } from "./route-controller.js";
-export const router = new Router();
-router
-    .get("/", home)
-    .get("/about", about);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Router = require("@koa/router");
+const route_controller_js_1 = require("./route-controller.js");
+exports.router = new Router();
+exports.router
+    .get("/", route_controller_js_1.home)
+    .get("/about", route_controller_js_1.about);

@@ -1,8 +1,9 @@
 import Debug from "debug";
-import Koa, { DefaultContext, DefaultState } from "koa";
-import serve from "koa-static";
+import { DefaultContext, DefaultState } from "koa";
 import { nunjucks } from "./middleware/nunjucks.js";
 import { router } from "./pages/router.js";
+import serve = require ("koa-static");
+import Koa = require ("koa");
 
 const debug = Debug ("app:main")
 

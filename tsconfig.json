@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "checkJs": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noErrorTruncation": true,
     "noFallthroughCasesInSwitch": true,

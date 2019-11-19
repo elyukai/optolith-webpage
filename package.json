@@ -35,6 +35,5 @@
     "koa": "2.11.0",
     "koa-nunjucks-async": "1.2.0",
     "koa-static": "5.0.0"
-  },
-  "type": "module"
+  }
 }
