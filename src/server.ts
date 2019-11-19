@@ -12,7 +12,7 @@ export interface Context extends DefaultContext {
   render: (template: string, data: any) => Promise<any>
 }
 
-const port = 3000
+const port = 80
 const app = new Koa<State, Context> ()
 
 const main = async () => {

@@ -4,7 +4,7 @@ import serve from "koa-static";
 import { nunjucks } from "./middleware/nunjucks.js";
 import { router } from "./pages/router.js";
 const debug = Debug("app:main");
-const port = 3000;
+const port = 80;
 const app = new Koa();
 const main = async () => {
     try {
