@@ -1,10 +1,28 @@
+
+
+:root {
+  --gold: #826a3e;
+  --grey: #7a7a7a;
+}
+
 svg#logo .cls-1 {
-  fill: #836b3e;
+  fill: var(--gold);
 }
 
 svg#logo .cls-2 {
   fill: none;
-  stroke: #836b3e;
+  stroke: var(--gold);
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+svg#footer-logo .cls-1 {
+  fill: var(--grey);
+}
+
+svg#footer-logo .cls-2 {
+  fill: none;
+  stroke: var(--grey);
   stroke-miterlimit: 10;
   stroke-width: 2px;
 }
