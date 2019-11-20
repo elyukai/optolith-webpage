@@ -109,6 +109,61 @@
   font-weight: 400;
   src: url("/fonts/AlegreyaSans/AlegreyaSansSC-Italic.otf") format("opentype")
 }
+@font-face {
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Alegreya/Alegreya-Bold.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Alegreya";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/Alegreya/Alegreya-BoldItalic.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Alegreya/Alegreya-Regular.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Alegreya";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/Alegreya/Alegreya-Italic.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Alegreya SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Alegreya/AlegreyaSC-Bold.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Alegreya SC";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/Alegreya/AlegreyaSC-BoldItalic.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Alegreya SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Alegreya/AlegreyaSC-Regular.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Alegreya SC";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/Alegreya/AlegreyaSC-Italic.otf") format("opentype")
+}
 
 @font-face {
   font-family: "Fira Code";
