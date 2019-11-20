@@ -1,17 +1,25 @@
-{% extends "layout.njk" %}
+{% set mainClass = "home" %}
+{% set title = "Home" %}
+
+{% extends "en-US/layout.njk" %}
 
 {% block content %}
 <h1><span>Optolith</span> <span>Character Creator and Manager for TDE 5th Edition</span></h1>
 <p class="promo">
   Optolith is a tool to create and manage characters for the Pen & Paper RPG <em>The Dark Eye</em> (5th Edition) by Ulisses Spiele. It features strict rules checks, an clean user interface that fits both mouse and touch input, and direct references of rules and crunch.
 </p>
-<a href="/download" class="btn">Download Optolith</a>
-<h2>Get Help</h2>
+<p>
+  <a href="/en/download" class="btn">Download Optolith</a>
+</p>
+<h2>Community</h2>
 <ul>
   <li><a href="https://github.com/elyukai/optolith-client/issues">GitHub</a></li>
-  <li><a href="https://www.orkenspalter.de/index.php?thread/23638/">Orkenspalter (DE)</a></li>
-  <li><a href="https://dsaforum.de/viewtopic.php?f=9&t=45064">DSAForum (DE)</a></li>
-  <li><a href="http://www.ulisses-us.com/forum/viewtopic.php?f=14&t=953">Ulisses US Forums (EN)</a></li>
-  <li><a href="https://discord.gg/uDyR4yr">Join Discord Server</a></li>
+  <li><a href="http://www.ulisses-us.com/forum/viewtopic.php?f=14&t=953">Ulisses US Forum</a></li>
+  <li><a href="https://discord.gg/uDyR4yr">Join the Discord server!</a></li>
 </ul>
+{% endblock %}
+
+{% block otherlangs %}
+<li><a href="/de/">Deutsch</a></li>
+<li><a href="/en/">English</a></li>
 {% endblock %}

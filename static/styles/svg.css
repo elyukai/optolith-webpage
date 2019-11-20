@@ -1,9 +1,4 @@
-
-
-:root {
-  --gold: #826a3e;
-  --grey: #7a7a7a;
-}
+@import "colors.css";
 
 svg#logo .cls-1 {
   fill: var(--gold);
@@ -17,12 +12,12 @@ svg#logo .cls-2 {
 }
 
 svg#footer-logo .cls-1 {
-  fill: var(--grey);
+  fill: var(--dark-grey);
 }
 
 svg#footer-logo .cls-2 {
   fill: none;
-  stroke: var(--grey);
+  stroke: var(--dark-grey);
   stroke-miterlimit: 10;
   stroke-width: 2px;
 }

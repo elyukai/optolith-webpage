@@ -1,4 +1,7 @@
-{% extends "layout.njk" %}
+{% set mainClass = "about" %}
+{% set title = "About" %}
+
+{% extends "en-US/layout.njk" %}
 
 {% block content %}
 <h1>Imprint</h1>
@@ -12,7 +15,7 @@
   <a href="mailto:support@optolith.app">support@optolith.app</a>
 </address>
 
-<h2>Licenses</h2>
+<h2>Third-Party Licenses</h2>
 
 <h3>Alegreya</h3>
 <p class="license">Copyright (c) 2013, Juan Pablo del Peral (juan@huertatipografica.com.ar), with Reserved Font Names 'Alegreya'
@@ -308,4 +311,9 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
 
   END OF TERMS AND CONDITIONS</p>
+{% endblock %}
+
+{% block otherlangs %}
+<li><a href="/de/about">Deutsch</a></li>
+<li><a href="/en/about">English</a></li>
 {% endblock %}

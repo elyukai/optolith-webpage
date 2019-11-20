@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>{{ title }} &ndash; Optolith</title>
+</head>
+<body>
+  <header>
+    <div id="header-inner">
+      <nav>
+        <ul>
+          <li><a href="/de/"><object type="image/svg+xml" data="/images/logo.svg" id="header-logo">Startseite</object></a></li>
+          <li><a href="/de/download">Herunterladen</a></li>
+          <li><a href="/de/about">Über Optolith</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="{{ mainClass }}">
+    <div id="main-inner">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </main>
+  <footer>
+    <div id="footer-inner">
+      <ul class="links">
+        <li><a href="/de/">Startseite</a></li>
+        <li><a href="/de/download">Herunterladen</a></li>
+        <li><a href="/de/about">Über Optolith</a></li>
+      </ul>
+      <ul class="other-languages">
+        {% block otherlangs %}
+        {% endblock %}
+      </ul>
+      <p class="legal">
+        &copy; 2017-present Lukas Obermann and contributors under license of Ulisses Spiele
+      </p>
+      <object type="image/svg+xml" data="/images/footer-logo.svg" id="footer-logo" aria-role="presentation" />
+    </div>
+  </footer>
+</body>
+</html>

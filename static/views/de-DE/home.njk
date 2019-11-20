@@ -1,0 +1,26 @@
+{% set mainClass = "home" %}
+{% set title = "Home" %}
+
+{% extends "de-DE/layout.njk" %}
+
+{% block content %}
+<h1><span>Optolith</span> <span>Heldenerstellung und -verwaltung für DSA5</span></h1>
+<p class="promo">
+  Optolith ist ein Tool zum Erstellen und Verwalten von Helden für das Pen-and-Paper-Rollenspiel <em>Das Schwarze Auge 5</em> von Ulisses Spiele. Es sorgt dafür, dass alle Regeln auch wirklich eingehalten werden, enthält eine übersichtliche Benutzeroberfläche und ist sowohl per Maus als auch per Touch optimal bedienbar. Außerdem kann es dir Regeln und Crunch-Texte anzeigen, während du einen Helden erstellst oder editierst.
+</p>
+<p>
+  <a href="/de/download" class="btn">Optolith herunterladen</a>
+</p>
+<h2>Community</h2>
+<ul>
+  <li><a href="https://github.com/elyukai/optolith-client/issues">GitHub</a></li>
+  <li><a href="https://www.orkenspalter.de/index.php?thread/23638/">Orkenspalter</a></li>
+  <li><a href="https://dsaforum.de/viewtopic.php?f=9&t=45064">DSAForum</a></li>
+  <li><a href="https://discord.gg/TQkqF4V">Komm auf den Discord-Server!</a></li>
+</ul>
+{% endblock %}
+
+{% block otherlangs %}
+<li><a href="/de/">Deutsch</a></li>
+<li><a href="/en/">English</a></li>
+{% endblock %}

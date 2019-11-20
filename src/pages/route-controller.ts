@@ -4,26 +4,28 @@ import { Context, State } from "../server.js"
 
 const debug = Debug ("app:pages:routectrl")
 
-export const home: Middleware<State, Context> = async (ctx, next) => {
-  debug ("GET /")
+export enum Locale { de = "de-DE", en = "en-US" }
 
-  await ctx.render ("home", { title: "Home", mainClass: "home", lang: "en" })
+export const home = (locale: Locale): Middleware<State, Context> => async (ctx, next) => {
+  debug (`GET /; Locale = ${locale}`)
 
-  await next ()
-}
-
-export const download: Middleware<State, Context> = async (ctx, next) => {
-  debug ("GET /download")
-
-  await ctx.render ("download", { title: "Download", mainClass: "download", lang: "en" })
+  await ctx.render (`${locale}/home`, {})
 
   await next ()
 }
 
-export const about: Middleware<State, Context> = async (ctx, next) => {
-  debug ("GET /about")
+export const download = (locale: Locale): Middleware<State, Context> => async (ctx, next) => {
+  debug (`GET /download; Locale = ${locale}`)
 
-  await ctx.render ("about", { title: "About", mainClass: "about", lang: "en" })
+  await ctx.render (`${locale}/download`, {})
+
+  await next ()
+}
+
+export const about = (locale: Locale): Middleware<State, Context> => async (ctx, next) => {
+  debug (`GET /about; Locale = ${locale}`)
+
+  await ctx.render (`${locale}/about`, {})
 
   await next ()
 }
