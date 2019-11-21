@@ -50,6 +50,11 @@ button:hover {
   border-color: var(--link-color-hover);
 }
 
+a.btn:active,
+button:active {
+  border-color: var(--link-color-active);
+}
+
 /* HEADER */
 
 header {
@@ -243,10 +248,13 @@ footer ul.other-languages {
 }
 
 footer ul li a,
-footer ul li a:hover,
 footer ul li a:visited {
   text-decoration: none;
   color: var(--footer-text-color);
+}
+
+footer ul li a:hover {
+  color: var(--link-color-hover);
 }
 
 footer #footer-logo {

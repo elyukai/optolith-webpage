@@ -22,10 +22,11 @@
 	--background-color: var(--black);
 	--background-color-transparent06: transparentize(#111, .4);
 	--background-color-transparent08: transparentize(#111, .2);
-	--headings-color: #f7f4ed;
+	--headings-color: var(--white);
 	--text-color: var(--grey);
   --link-color: var(--gold-50-bright);
-  --link-color-hover: var(--dark-gold);
+  --link-color-hover: var(--white);
+  --link-color-active: var(--dark-gold);
   --footer-text-color: var(--grey);
   --horizontal-padding: var(--layout-unit);
   --legal-text: var(--dark-grey);
