@@ -1,15 +1,15 @@
 import Router = require ("@koa/router");
 import { Context, State } from "../server.js";
-import { download, home, imprint, privacy, thirdpartylicenses } from "./route-controller.js";
+import { download, home, imprint, privacy, redirectLocale, thirdpartylicenses } from "./route-controller.js";
 
 export const router = new Router<State, Context> ()
 
 router
-  .get ("/", ctx => ctx.redirect ("/en/"))
-  .get ("/download/", ctx => ctx.redirect ("/en/download"))
-  .get ("/imprint/", ctx => ctx.redirect ("/en/imprint"))
-  .get ("/thirdpartylicenses/", ctx => ctx.redirect ("/en/thirdpartylicenses"))
-  .get ("/privacy/", ctx => ctx.redirect ("/en/privacy"))
+  .get ("/", redirectLocale ("/"))
+  .get ("/download/", redirectLocale ("/download"))
+  .get ("/imprint/", redirectLocale ("/imprint"))
+  .get ("/thirdpartylicenses/", redirectLocale ("/thirdpartylicenses"))
+  .get ("/privacy/", redirectLocale ("/privacy"))
   .get ("/:locale/", home)
   .get ("/:locale/download/", download)
   .get ("/:locale/imprint/", imprint)
