@@ -4,28 +4,44 @@ import { Context, State } from "../server.js"
 
 const debug = Debug ("app:pages:routectrl")
 
-export enum Locale { de = "de-DE", en = "en-US" }
 
-export const home = (locale: Locale): Middleware<State, Context> => async (ctx, next) => {
-  debug (`GET /; Locale = ${locale}`)
 
-  await ctx.render (`${locale}/home`, {})
+export const home: Middleware<State, Context> = async (ctx, next) => {
+  debug (`GET /; Locale = ${ctx.params.locale}`)
 
-  await next ()
-}
-
-export const download = (locale: Locale): Middleware<State, Context> => async (ctx, next) => {
-  debug (`GET /download; Locale = ${locale}`)
-
-  await ctx.render (`${locale}/download`, {})
+  await ctx.render (`${ctx.params.locale}/home`, {})
 
   await next ()
 }
 
-export const about = (locale: Locale): Middleware<State, Context> => async (ctx, next) => {
-  debug (`GET /about; Locale = ${locale}`)
+export const download: Middleware<State, Context> = async (ctx, next) => {
+  debug (`GET /download; Locale = ${ctx.params.locale}`)
 
-  await ctx.render (`${locale}/about`, {})
+  await ctx.render (`${ctx.params.locale}/download`, {})
+
+  await next ()
+}
+
+export const imprint: Middleware<State, Context> = async (ctx, next) => {
+  debug (`GET /imprint; Locale = ${ctx.params.locale}`)
+
+  await ctx.render (`${ctx.params.locale}/imprint`, {})
+
+  await next ()
+}
+
+export const thirdpartylicenses: Middleware<State, Context> = async (ctx, next) => {
+  debug (`GET /thirdpartylicenses; Locale = ${ctx.params.locale}`)
+
+  await ctx.render (`${ctx.params.locale}/thirdpartylicenses`, {})
+
+  await next ()
+}
+
+export const privacy: Middleware<State, Context> = async (ctx, next) => {
+  debug (`GET /privacy; Locale = ${ctx.params.locale}`)
+
+  await ctx.render (`${ctx.params.locale}/privacy`, {})
 
   await next ()
 }

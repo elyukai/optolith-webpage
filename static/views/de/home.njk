@@ -1,7 +1,8 @@
 {% set mainClass = "home" %}
+{% set route = "" %}
 {% set title = "Home" %}
 
-{% extends "de-DE/layout.njk" %}
+{% extends "de/layout.njk" %}
 
 {% block content %}
 <h1><span>Optolith</span> <span>Heldenerstellung und -verwaltung für DSA5</span></h1>
@@ -18,9 +19,4 @@
   <li><a href="https://dsaforum.de/viewtopic.php?f=9&t=45064">DSAForum</a></li>
   <li><a href="https://discord.gg/TQkqF4V">Komm auf den Discord-Server!</a></li>
 </ul>
-{% endblock %}
-
-{% block otherlangs %}
-<li><a href="/de/">Deutsch</a></li>
-<li><a href="/en/">English</a></li>
 {% endblock %}

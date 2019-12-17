@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de-DE">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,8 @@
     <div id="header-inner">
       <nav>
         <ul>
-          <li><a href="/de/"><object type="image/svg+xml" data="/images/logo.svg" id="header-logo">Startseite</object></a></li>
-          <li><a href="/de/download">Herunterladen</a></li>
-          <li><a href="/de/about">Über Optolith</a></li>
+          <li><a href="/en/"><object type="image/svg+xml" data="/images/logo.svg" id="header-logo">Home</object></a></li>
+          <li><a href="/en/download">Download</a></li>
         </ul>
       </nav>
     </div>
@@ -27,13 +26,15 @@
   <footer>
     <div id="footer-inner">
       <ul class="links">
-        <li><a href="/de/">Startseite</a></li>
-        <li><a href="/de/download">Herunterladen</a></li>
-        <li><a href="/de/about">Über Optolith</a></li>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/download">Download</a></li>
+        <li><a href="/en/privacy">Privacy Policy &amp; Disclaimer</a></li>
+        <li><a href="/en/thirdpartylicenses">Third-party licenses</a></li>
+        <li><a href="/en/imprint">Imprint</a></li>
       </ul>
       <ul class="other-languages">
-        {% block otherlangs %}
-        {% endblock %}
+        <li><a href="/de/{{ route }}">Deutsch</a></li>
+        <li><a href="/en/{{ route }}">English</a></li>
       </ul>
       <p class="legal">
         &copy; 2017-present Lukas Obermann and contributors under license of Ulisses Spiele

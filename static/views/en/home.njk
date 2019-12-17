@@ -1,7 +1,8 @@
 {% set mainClass = "home" %}
+{% set route = "" %}
 {% set title = "Home" %}
 
-{% extends "en-US/layout.njk" %}
+{% extends "en/layout.njk" %}
 
 {% block content %}
 <h1><span>Optolith</span> <span>Character Creator and Manager for TDE 5th Edition</span></h1>
@@ -17,9 +18,4 @@
   <li><a href="http://www.ulisses-us.com/forum/viewtopic.php?f=14&t=953">Ulisses US Forum</a></li>
   <li><a href="https://discord.gg/uDyR4yr">Join the Discord server!</a></li>
 </ul>
-{% endblock %}
-
-{% block otherlangs %}
-<li><a href="/de/">Deutsch</a></li>
-<li><a href="/en/">English</a></li>
 {% endblock %}
