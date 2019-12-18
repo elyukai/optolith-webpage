@@ -66,6 +66,7 @@ header {
   background: var(--background-color);
   display: flex;
   justify-content: center;
+  border-bottom: double 3pt var(--link-color);
 }
 
 #header-inner {
