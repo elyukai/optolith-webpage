@@ -1,17 +1,11 @@
-import Router = require ("@koa/router");
-import { Context, State } from "../server.js";
-import { download, home, imprint, privacy, redirectLocale, thirdpartylicenses } from "./route-controller.js";
+import express = require ("express");
+import { download, home, imprint, notFound, privacy, thirdpartylicenses } from "./route-controller";
 
-export const router = new Router<State, Context> ()
+export const router = express.Router ()
 
-router
-  .get ("/", redirectLocale ("/"))
-  .get ("/download/", redirectLocale ("/download"))
-  .get ("/imprint/", redirectLocale ("/imprint"))
-  .get ("/thirdpartylicenses/", redirectLocale ("/thirdpartylicenses"))
-  .get ("/privacy/", redirectLocale ("/privacy"))
-  .get ("/:locale/", home)
-  .get ("/:locale/download/", download)
-  .get ("/:locale/imprint/", imprint)
-  .get ("/:locale/thirdpartylicenses/", thirdpartylicenses)
-  .get ("/:locale/privacy/", privacy)
+router.get ("/:locale/", home)
+router.get ("/:locale/download/", download)
+router.get ("/:locale/imprint/", imprint)
+router.get ("/:locale/thirdpartylicenses/", thirdpartylicenses)
+router.get ("/:locale/privacy/", privacy)
+router.get ("/:locale/*", notFound)
