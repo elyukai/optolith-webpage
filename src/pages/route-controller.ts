@@ -1,64 +1,47 @@
-import { Middleware } from "@koa/router"
 import Debug from "debug"
-import { Context, State } from "../server.js"
+import { RequestHandler } from "express"
+import { SUPPORTED_LANGUAGES } from "../middleware/redirectLocale"
 
 const debug = Debug ("app:pages:routectrl")
 
-const SUPPORTED_LANGUAGES = ["de", "en"]
+export const home: RequestHandler = async (req, res, next) => {
+  debug (`GET /; Locale = ${req.params.locale}`)
 
-export const redirectLocale = (redirectRoute: string): Middleware<State, Context> => ctx => {
-  const accepted_langs = ctx.request.acceptsLanguages ()
-  if (typeof accepted_langs === "boolean") {
-    ctx.redirect (`/en${redirectRoute}`)
+  if (SUPPORTED_LANGUAGES.includes (req.params.locale)) {
+    res.render (`${req.params.locale}/home`, {})
   }
   else {
-    const inferred_lang = accepted_langs .find (e => SUPPORTED_LANGUAGES .includes (e))
-
-    if (inferred_lang !== undefined) {
-      ctx.redirect (`/${inferred_lang}${redirectRoute}`)
-    }
-    else {
-      ctx.redirect (`/en${redirectRoute}`)
-    }
+    next ()
   }
 }
 
-export const home: Middleware<State, Context> = async (ctx, next) => {
-  debug (`GET /; Locale = ${ctx.params.locale}`)
+export const download: RequestHandler = async (req, res) => {
+  debug (`GET /download; Locale = ${req.params.locale}`)
 
-  await ctx.render (`${ctx.params.locale}/home`, {})
-
-  await next ()
+  res.render (`${req.params.locale}/download`, {})
 }
 
-export const download: Middleware<State, Context> = async (ctx, next) => {
-  debug (`GET /download; Locale = ${ctx.params.locale}`)
+export const imprint: RequestHandler = async (req, res) => {
+  debug (`GET /imprint; Locale = ${req.params.locale}`)
 
-  await ctx.render (`${ctx.params.locale}/download`, {})
-
-  await next ()
+  res.render (`${req.params.locale}/imprint`, {})
 }
 
-export const imprint: Middleware<State, Context> = async (ctx, next) => {
-  debug (`GET /imprint; Locale = ${ctx.params.locale}`)
+export const thirdpartylicenses: RequestHandler = async (req, res) => {
+  debug (`GET /thirdpartylicenses; Locale = ${req.params.locale}`)
 
-  await ctx.render (`${ctx.params.locale}/imprint`, {})
-
-  await next ()
+  res.render (`${req.params.locale}/thirdpartylicenses`, {})
 }
 
-export const thirdpartylicenses: Middleware<State, Context> = async (ctx, next) => {
-  debug (`GET /thirdpartylicenses; Locale = ${ctx.params.locale}`)
+export const privacy: RequestHandler = async (req, res) => {
+  debug (`GET /privacy; Locale = ${req.params.locale}`)
 
-  await ctx.render (`${ctx.params.locale}/thirdpartylicenses`, {})
-
-  await next ()
+  res.render (`${req.params.locale}/privacy`, {})
 }
 
-export const privacy: Middleware<State, Context> = async (ctx, next) => {
-  debug (`GET /privacy; Locale = ${ctx.params.locale}`)
+export const notFound: RequestHandler = async (req, res) => {
+  debug (`*; Locale = ${req.params.locale}`)
 
-  await ctx.render (`${ctx.params.locale}/privacy`, {})
-
-  await next ()
+  res.status (404)
+  res.render (`${req.params.locale}/notfound`, {})
 }

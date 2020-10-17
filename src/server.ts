@@ -1,42 +1,30 @@
-import Debug from "debug";
-import { DefaultContext, DefaultState } from "koa";
-import { nunjucks } from "./middleware/nunjucks.js";
+import { redirectLocale } from "./middleware/redirectLocale.js";
 import { router } from "./pages/router.js";
-import serve = require ("koa-static");
-import Koa = require ("koa");
-
-const debug = Debug ("app:main")
-
-export interface State extends DefaultState { }
-
-export interface Context extends DefaultContext {
-  render: (template: string, data: any) => Promise<any>
-}
+import nunjucks = require ("nunjucks");
+import express = require ("express");
 
 const port = 80
-const app = new Koa<State, Context> ()
+const app = express ()
 
-const main = async () => {
-  try {
-    app.on ("error", async (err, ctx) => {
-      console.error ("Server error", err, ctx);
+try {
+  app.use (express.static ("static"))
+
+  nunjucks
+    .configure ("src/views", {
+      autoescape: true,
+      watch: true,
+      express: app,
     })
 
-    app.use (serve ("static"))
+  app.set("view engine", "njk");
 
-    app.use (nunjucks ("static/views"))
+  app.use (redirectLocale)
+  app.use (router)
 
-    app.use (router.routes ())
-
-    app.listen (port)
-
-    debug ("Server started on port %i.", port)
-  }
-  catch (err) {
-    console.error ("Server error", err)
-  }
+  app.listen (port, () => console.log ("Server started on port %i.", port))
 }
-
-main ()
+catch (err) {
+  console.error ("Server error", err)
+}
 
 export default app

@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const nunjucksAsync = require("koa-nunjucks-async");
+const nunjucks = require("nunjucks");
 const nunjucksOptions = {
-    opts: {
-        autoescape: true,
-        watch: true
-    },
-    ext: ".njk"
+    autoescape: true,
+    watch: true,
 };
-exports.nunjucks = (relativePath) => nunjucksAsync(relativePath, nunjucksOptions);
+exports.useNunjucks = (app, relativePath) => () => {
+    nunjucks.configure(relativePath, {
+        ...nunjucksOptions,
+        express: app,
+    });
+};
