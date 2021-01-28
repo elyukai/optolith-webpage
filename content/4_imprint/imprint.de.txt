@@ -1,0 +1,37 @@
+Title: Impressum
+
+----
+
+Intro: Diese Website verwendet (link: https://getkirby.com text: Kirby) und wird verwaltet von:
+
+----
+
+Name: Lukas Obermann
+
+----
+
+Street: Duburger Straße
+
+----
+
+Number: 13
+
+----
+
+Zipcode: 24939
+
+----
+
+City: Flensburg
+
+----
+
+Country: Germany
+
+----
+
+Email: admin@optolith.app
+
+----
+
+Tel: +4915227707397

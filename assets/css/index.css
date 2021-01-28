@@ -1,0 +1,272 @@
+@import "fonts.css";
+@import "colors.css";
+
+@media (min-width: 400px) {
+  :root {
+    --horizontal-padding: calc(var(--layout-unit) * 2);
+  }
+}
+
+.hidden {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  /* added line */
+  width: 1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  font: 400 16px/24px "Alegreya Sans";
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+  min-height: calc(100vh - 200px);
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  height: 120px;
+  width: 120px;
+}
+
+a.btn,
+button {
+  border: 1px solid var(--link-color);
+	padding: 0 var(--layout-unit);
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+	min-width: 140px;
+	letter-spacing: 0.1em;
+	font: bold 1em/1em "Alegreya";
+  text-align: center;
+	text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.btn:hover,
+button:hover {
+  border-color: var(--link-color-hover);
+}
+
+a.btn:active,
+button:active {
+  border-color: var(--link-color-active);
+}
+
+/* HEADER */
+
+body > header {
+  height: calc(var(--layout-unit) * 4);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+
+#header-inner {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 var(--horizontal-padding);
+  display: flex;
+  align-items: center;
+}
+
+body > header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none outside none;
+  height: calc(var(--layout-unit) * 4);
+}
+
+body > header nav ul li {
+  margin-left: calc(var(--layout-unit) * 2);
+}
+
+body > header nav ul li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  display: block;
+}
+
+body > header nav ul li a,
+body > header nav ul li a:visited {
+  color: var(--link-color);
+  z-index: 2;
+}
+
+body > header nav ul li a:hover {
+  color: var(--link-color-hover);
+}
+
+body > header #header-logo {
+  height: calc(var(--layout-unit) * 2);
+  z-index: -1;
+  pointer-events: none;
+  display: block;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--layout-unit) * 5) 0 0;
+}
+
+#main-inner {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 var(--horizontal-padding);
+}
+
+main h1 {
+  font: italic normal 400 2.8em/1.2em "Alegreya Sans";
+  margin: 68px 0 0;
+  color: var(--headings-color);
+}
+
+main h2 {
+  font: normal 400 1.6em/1.1em "Alegreya Sans";
+  margin: 48px 0 10px;
+  color: var(--headings-color);
+}
+
+main h3 {
+  font: normal 400 1.2em/1.1em "Alegreya Sans";
+  margin: 32px 0 10px;
+  color: var(--headings-color);
+}
+
+main a,
+main a:visited {
+  color: var(--link-color);
+}
+
+main a:hover {
+  color: var(--link-color-hover);
+}
+
+main p {
+  margin: 20px 0 0;
+}
+
+main ul {
+  padding: 0 0 0 25px;
+  margin: var(--layout-unit) 0 0;
+  display: block;
+}
+
+main ul li {
+  display: block;
+  position: relative;
+}
+
+main ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: -24px;
+  margin-top: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--separator-color-halftransparent);
+  transform: rotate(45deg);
+}
+
+/* HOME */
+
+header > h1 + p {
+  font-size: 1.9em;
+  line-height: 1.3em;
+  color: var(--text-color);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ABOUT */
+
+address {
+  font-style: normal;
+}
+
+p.license {
+  white-space: pre-line;
+  max-width: 600px;
+  font: .9em/1.5em "Fira Code";
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--layout-unit) * 4) 0;
+  margin-top: calc(var(--layout-unit) * 2);
+}
+
+#footer-inner {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 var(--horizontal-padding);
+  display: grid;
+  grid-template-areas: "links other-langs logo"
+                       "legal legal       logo";
+  grid-template-columns: 1fr 1fr calc(var(--layout-unit) * 3);
+  grid-template-rows: auto auto;
+  gap: var(--layout-unit);
+}
+
+footer .legal {
+  color: var(--legal-text);
+  font-size: 0.9em;
+  margin: 10px 0 0;
+  grid-area: legal;
+}
+
+footer ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul.links {
+  grid-area: links;
+}
+
+footer ul.other-languages {
+  grid-area: other-langs;
+}
+
+footer ul li a,
+footer ul li a:visited {
+  text-decoration: none;
+  color: var(--footer-text-color);
+}
+
+footer ul li a:hover {
+  color: var(--link-color-hover);
+}
+
+footer #footer-logo {
+  height: calc(var(--layout-unit) * 3);
+}

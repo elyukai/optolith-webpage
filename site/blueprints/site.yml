@@ -1,0 +1,23 @@
+title: Site
+sections:
+  header:
+    type: fields
+    fields:
+      headerlinks:
+        label: Links in Header
+        type: pages
+        translate: false
+  pages:
+    type: pages
+    status: all
+  footer:
+    type: fields
+    fields:
+      footerlinks:
+        label: Links in Footer
+        type: pages
+        translate: false
+      legal:
+        label: Legal
+        type: textarea
+        size: small
