@@ -1,0 +1,17 @@
+Title: Download
+
+----
+
+Headline: Download Optolith
+
+----
+
+Text: Optolith is available for Windows (exe), Mac (dmg) and Linux (64-bit, AppImage and tar.gz).
+
+----
+
+Downloadlink: https://www.ulisses-ebooks.de/product/220253
+
+----
+
+Downloadtext: Download from Scriptorium

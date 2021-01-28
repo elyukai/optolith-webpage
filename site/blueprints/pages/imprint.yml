@@ -1,0 +1,66 @@
+title: Imprint
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      intro:
+        type: fields
+        fields:
+          intro:
+            label: Intro
+            type: textarea
+            required: true
+      address:
+        type: fields
+        fields:
+          name:
+            label: Name
+            type: text
+            required: true
+            translate: false
+          street:
+            label: Street
+            type: text
+            required: true
+            width: 3/4
+            translate: false
+          number:
+            label: No.
+            type: text
+            required: true
+            width: 1/4
+            translate: false
+          zipcode:
+            label: ZIP Code
+            type: text
+            required: true
+            width: 1/2
+            translate: false
+          city:
+            label: City
+            type: text
+            required: true
+            width: 1/2
+            translate: false
+          country:
+            label: Country
+            type: text
+            required: true
+            translate: false
+  meta:
+    width: 1/3
+    sections:
+      contact:
+        type: fields
+        fields:
+          email:
+            label: E-Mail
+            type: email
+            required: true
+            translate: false
+          tel:
+            label: Phone
+            type: tel
+            required: true
+            translate: false

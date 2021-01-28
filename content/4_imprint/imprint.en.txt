@@ -1,0 +1,5 @@
+Title: Imprint
+
+----
+
+Intro: This website uses (link: https://getkirby.com text: Kirby) and is made by:

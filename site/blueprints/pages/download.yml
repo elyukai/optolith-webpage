@@ -1,0 +1,19 @@
+title: Download
+icon: 📥
+preset: page
+fields:
+  headline:
+    type: text
+    help: If specified, it replaces the title on the page itself.
+  text:
+    type: textarea
+    size: medium
+    required: true
+  downloadlink:
+    type: url
+    required: true
+    width: 1/2
+  downloadtext:
+    type: text
+    required: true
+    width: 1/2

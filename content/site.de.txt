@@ -1,0 +1,21 @@
+Title: Optolith
+
+----
+
+Headerlinks:
+
+- download
+
+----
+
+Footerlinks:
+
+- home
+- download
+- privacy
+- licenses
+- imprint
+
+----
+
+Legal: © 2017-Gegenwart Lukas Obermann und Unterstützende unter Lizenz von Ulisses Spiele

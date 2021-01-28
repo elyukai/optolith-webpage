@@ -1,0 +1,35 @@
+title: Home
+icon: 🏠
+fields:
+  headline:
+    type: text
+    width: 1/2
+    required: true
+  gap:
+    width: 1/2
+  subheadline:
+    type: text
+    width: 1/2
+    required: true
+  text:
+    type: textarea
+    size: medium
+    required: true
+  downloadtext:
+    type: text
+    required: true
+  communitylinks:
+    label: Community Links
+    type: structure
+    required: true
+    fields:
+      name:
+        type: text
+        label: Name
+        width: 1/2
+        required: true
+      link:
+        type: url
+        label: Link
+        width: 1/2
+        required: true

@@ -1,0 +1,6 @@
+title: Error
+icon: ❌
+fields:
+  text:
+    type: textarea
+    size: medium
