@@ -12,7 +12,7 @@
   <h2><?= t('community') ?></h2>
   <ul>
     <?php foreach ($page->communitylinks()->toStructure() as $communitylink) : ?>
-      <li><a href="<?= $communitylink->url() ?>"><?= $communitylink->name()->html() ?></a></li>
+      <li><a href="<?= $communitylink->link()->html() ?>"><?= $communitylink->name()->html() ?></a></li>
     <?php endforeach ?>
   </ul>
 </div>
