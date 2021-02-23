@@ -4,17 +4,17 @@ Title: Optolith
 
 Headerlinks:
 
-- download
+- herunterladen
 
 ----
 
 Footerlinks:
 
 - home
-- download
-- privacy
-- licenses
-- imprint
+- herunterladen
+- datenschutz
+- lizenzen
+- impressum
 
 ----
 

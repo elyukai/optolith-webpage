@@ -2,6 +2,10 @@ Title: Privacy Policy
 
 ----
 
+Slug: privacy
+
+----
+
 Text:
 
 ## Responsible for content

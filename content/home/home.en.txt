@@ -10,7 +10,7 @@ Subheadline: Character Creator and Manager for TDE 5th Edition
 
 ----
 
-Text: Optolith is a tool to create and manage characters for the Pen & Paper RPG *The Dark Eye* (5th Edition) by Ulisses Spiele. If you use Optolith, you don't have to worry anymore if you follow all the rules -- because it does it for you! It also offers you a clear user interface, you can use it both with the mouse and touch, and it can display rules and crunch texts while you create or edit a hero. So you can concentrate on the essentials of hero creation and management: The heroes themselves.
+Text: Optolith is a tool to create and manage characters for the Pen & Paper RPG *The Dark Eye* (5th Edition) by Ulisses Spiele. If you use Optolith, you don't have to worry anymore if you follow all the rules -- because it does it for you! It also offers you a clean user interface, you can use with both a mouse and touch, and it can display rules and crunch texts while you create or edit a character. So you can concentrate on the essentials of character creation and management: The characters themselves.
 
 ----
 
@@ -25,12 +25,15 @@ Communitylinks:
   link: >
     https://github.com/elyukai/optolith-client/issues
 - 
+  name: Discord
+  link: https://discord.gg/wfdgB9g
+- 
   name: Orkenspalter (EN)
   link: >
     https://www.orkenspalter.de/index.php?thread/38282/
 - 
-  name: Ulisses US Forum
-  link: 'http://www.ulisses-us.com/forum/viewtopic.php?f=14&t=953'
+  name: Facebook
+  link: https://www.facebook.com/optolithen
 - 
-  name: Join the Discord server!
-  link: https://discord.gg/wfdgB9g
+  name: Twitter
+  link: https://twitter.com/optolith
