@@ -2,6 +2,10 @@ Title: Datenschutzerklärung
 
 ----
 
+Slug: datenschutz
+
+----
+
 Text:
 
 ## Inhalt des Onlineangebotes

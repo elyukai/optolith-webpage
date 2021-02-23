@@ -2,6 +2,10 @@ Title: Herunterladen
 
 ----
 
+Slug: herunterladen
+
+----
+
 Headline: Optolith herunterladen
 
 ----

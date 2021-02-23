@@ -1,8 +1,8 @@
-Title: Impressum
+Title: Imprint
 
 ----
 
-Intro: Diese Website verwendet (link: https://getkirby.com text: Kirby) und wird verwaltet von:
+Intro: This website uses (link: https://getkirby.com text: Kirby) and is made by:
 
 ----
 

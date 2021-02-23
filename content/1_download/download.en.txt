@@ -2,10 +2,6 @@ Title: Download
 
 ----
 
-Slug: download
-
-----
-
 Headline: Download Optolith
 
 ----

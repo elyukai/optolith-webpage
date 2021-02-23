@@ -7,7 +7,7 @@
     <?= $page->text()->kt() ?>
   </div>
   <?php
-  $download = $site->page('herunterladen');
+  $download = $site->page('download');
   if ($download) : ?>
   <p>
     <a href="<?= $download->url() ?>" class="btn"><?= $page->downloadtext()->html() ?></a>

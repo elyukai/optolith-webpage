@@ -1,0 +1,9 @@
+Title: Impressum
+
+----
+
+Slug: impressum
+
+----
+
+Intro: Diese Website verwendet (link: https://getkirby.com text: Kirby) und wird verwaltet von:
