@@ -1,0 +1,23 @@
+{
+  "name": "optolith-webpage",
+  "version": "0.0.1",
+  "description": "The webpage for [Optolith Character Creator and Manager for TDE5](https://github.com/elyukai/optolith-client).",
+  "main": "index.js",
+  "scripts": {
+    "css:build": "sass site/css:assets/css --source-map",
+    "css:watch": "sass -w site/css:assets/css --source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elyukai/optolith-webpage.git"
+  },
+  "author": "Lukas Obermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elyukai/optolith-webpage/issues"
+  },
+  "homepage": "https://github.com/elyukai/optolith-webpage#readme",
+  "dependencies": {
+    "sass": "^1.34.0"
+  }
+}

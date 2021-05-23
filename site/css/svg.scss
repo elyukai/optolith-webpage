@@ -1,0 +1,36 @@
+@use "globals";
+
+svg#logo .cls-1 {
+  fill: var(--gold);
+}
+
+svg#logo .cls-2 {
+  fill: none;
+  stroke: var(--gold);
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+svg#logo-bright .cls-1,
+svg#logo:hover .cls-1 {
+  fill: var(--white);
+}
+
+svg#logo-bright .cls-2,
+svg#logo:hover .cls-2 {
+  fill: none;
+  stroke: var(--white);
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+svg#footer-logo .cls-1 {
+  fill: var(--dark-grey);
+}
+
+svg#footer-logo .cls-2 {
+  fill: none;
+  stroke: var(--dark-grey);
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}

@@ -10,7 +10,6 @@
 
   <?= css([
     'assets/css/index.css',
-    'assets/css/highlight.css',
     '@auto'
   ]) ?>
 

@@ -1,0 +1,9 @@
+header > h1 + p {
+  font-size: 1.9rem;
+  line-height: 1.3em;
+  color: var(--text-color);
+  font-style: italic;
+  margin: 0;
+}
+
+/*# sourceMappingURL=home.css.map */
