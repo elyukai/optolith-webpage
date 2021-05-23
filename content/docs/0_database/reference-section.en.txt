@@ -1,0 +1,35 @@
+Title: Database
+
+----
+
+Intro: Tutorials and references for working with the flat-file database.
+
+----
+
+Text:
+
+Welcome to the documentation of the Optolith database!
+
+There sites will cover a lot of questions you may have. Let's dive in!
+
+## Tutorials
+
+- (link: docs/database/git-workflow text: Git Workflow) is a tutorial for Git and how we use Git. You don't need to have any experience with Git or coding in general, but if you have, you'll get through it way faster!
+- (link: docs/database/setting-up-an-editor text: Setting Up an Editor) ... there's nothing else to say what it covers.
+- (link: docs/database/insertion-workflow text: Insertion Workflow) is a guide on how to start inserting new content, what you need to know and watch out for.
+- (link: docs/database/translation-workflow text: Translation Workflow) is a guide on how to start translating existing content, what you need to know and watch out for.
+- (link: docs/database/testing text: Testing) tells you how you can test your work.
+
+## References
+
+- (link: docs/database/conventions text: Conventions) is a list of "coding" conventions you should follow.
+- (link: docs/database/markdown text: Markdown) is a small guide for text formatting in Optolith, which uses Markdown syntax to style text. You'll get an overview as well as some do's and dont's.
+- ~~(link: docs/database/entities text: Entities) is an overview of all available entities, where you can check out specific ones and see what each property is used for.~~ (Not finished, please use hover information in the editor and schema files instead)
+
+## External use
+
+- (link: docs/database/using-the-database-in-your-own-project text: Using the database in your own project) gives you some hints and recommendations on how to use the Optolith database in your own projects.
+
+----
+
+Hidechildren: true

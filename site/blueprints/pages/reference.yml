@@ -1,0 +1,27 @@
+title: Reference
+icon: 📝
+
+columns:
+  content:
+    width: 2/3
+    fields:
+      headline:
+        type: text
+        help: If specified, it replaces the title on the page itself.
+      text:
+        type: textarea
+        size: huge
+        required: true
+        uploads: image
+  children:
+    width: 1/3
+    sections:
+      children:
+        type: pages
+        sortable: false
+        templates:
+          - reference-section
+          - reference-article
+      files:
+        type: files
+        template: image

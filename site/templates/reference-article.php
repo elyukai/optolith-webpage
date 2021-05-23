@@ -1,10 +1,10 @@
 <?php snippet('header') ?>
 
 <article>
-  <?php snippet('intro') ?>
-  <div class="text">
+  <?php snippet('intro', ['breadcrumbs' => true]) ?>
+  <section class="text">
     <?= $page->text()->kt() ?>
-  </div>
+  </section>
 </article>
 
 <?php snippet('footer') ?>

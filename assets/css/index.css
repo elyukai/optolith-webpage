@@ -1,10 +1,23 @@
 @import "fonts.css";
 @import "colors.css";
 
+:root {
+  font-size: 100%;
+}
+
 @media (min-width: 400px) {
   :root {
     --horizontal-padding: calc(var(--layout-unit) * 2);
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--dark-gold);
+  color: var(--white);
 }
 
 .hidden {
@@ -14,7 +27,6 @@
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  /* added line */
   width: 1px;
 }
 
@@ -24,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--background-color);
-  font: 400 16px/24px "Alegreya Sans";
+  font: 400 1.3rem/1.6em "Alegreya Sans";
   color: var(--text-color);
   letter-spacing: 0.03em;
   min-height: calc(100vh - 200px);
@@ -77,6 +89,7 @@ body > header {
   background: var(--background-color);
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 #header-inner {
@@ -138,20 +151,26 @@ main {
 }
 
 main h1 {
-  font: italic normal 400 2.8em/1.2em "Alegreya Sans";
+  font: italic normal 400 2.8rem/1.2em "Alegreya Sans";
   margin: 68px 0 0;
   color: var(--headings-color);
 }
 
 main h2 {
-  font: normal 400 1.6em/1.1em "Alegreya Sans";
-  margin: 48px 0 10px;
+  font: normal 400 2rem/1.1em "Alegreya Sans";
+  margin: 2rem 0 1rem;
   color: var(--headings-color);
 }
 
 main h3 {
-  font: normal 400 1.2em/1.1em "Alegreya Sans";
-  margin: 32px 0 10px;
+  font: normal 400 1.6rem/1.1em "Alegreya Sans";
+  margin: 1.5rem 0 1rem;
+  color: var(--headings-color);
+}
+
+main h4 {
+  font: normal 400 1.2rem/1.1em "Alegreya Sans";
+  margin: 1.25rem 0 1rem;
   color: var(--headings-color);
 }
 
@@ -165,18 +184,22 @@ main a:hover {
 }
 
 main p {
-  margin: 20px 0 0;
+  margin: 0.75rem 0 0;
 }
 
 main ul {
+  margin: 0.75rem 0 0;
   padding: 0 0 0 25px;
-  margin: var(--layout-unit) 0 0;
   display: block;
 }
 
 main ul li {
   display: block;
   position: relative;
+}
+
+main ul li:not(:first-child) {
+  margin: 0.375rem 0 0;
 }
 
 main ul li::before {
@@ -191,8 +214,157 @@ main ul li::before {
   transform: rotate(45deg);
 }
 
-/* HOME */
+main ul ul {
+  margin: 0;
+}
 
+main figure {
+  margin: 2rem;
+  position: relative;
+}
+
+main figure img {
+  max-width: 100%;
+}
+
+code {
+  font: 0.825em/1.5em "Fira Code";
+  color: var(--code-color);
+  background: var(--code-background);
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+pre > code.hljs {
+  font: 0.95rem/1.5em "Fira Code";
+  background: unset;
+  padding: unset;
+  border-radius: unset;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+section.intro {
+  margin: 1rem 0 2rem;
+  font-size: 1.4rem;
+}
+
+header.h1 {
+  margin-top: 68px;
+}
+
+header.h1 > h1 {
+  margin-top: 0;
+}
+
+nav.breadcrumbs {
+  margin: 0 0 0.5rem;
+}
+
+nav.breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav.breadcrumbs ol li {
+  margin: 0;
+}
+
+nav.breadcrumbs ol li:not(:last-child) {
+  margin-right: 0.75em;
+  display: flex;
+  align-items: center;
+}
+
+nav.breadcrumbs ol li:not(:last-child)::after {
+  content: "";
+  position: static;
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  border-color: var(--separator-color-halftransparent);
+  transform: rotate(45deg);
+  margin-left: 0.5em;
+}
+
+nav.breadcrumbs ol li a {
+  display: block;
+}
+
+nav.reference-children {
+  margin: 4rem 0;
+}
+
+nav.reference-children ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+  align-items: stretch;
+}
+
+nav.reference-children ul li {
+  position: relative;
+  margin: 0;
+}
+
+nav.reference-children ul li::before {
+  display: none;
+}
+
+nav.reference-children ul li a {
+  display: block;
+  padding: 1.5rem;
+  height: 100%;
+  text-decoration: none;
+}
+
+nav.reference-children ul li a::before,
+nav.reference-children ul li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  width: 1rem;
+  height: 100%;
+  border-style: solid;
+  border-color: var(--gold);
+  top: 0;
+  transition: width 0.15s ease-in-out;
+}
+
+nav.reference-children ul li a::before {
+  left: 0;
+  border-width: 1px 0 1px 1px;
+}
+
+nav.reference-children ul li a::after {
+  right: 0;
+  border-width: 1px 1px 1px 0;
+}
+
+nav.reference-children ul li a:hover::before,
+nav.reference-children ul li a:hover::after {
+  width: 50%;
+}
+
+nav.reference-children ul li a h3 {
+  margin: 0;
+}
+
+nav.reference-children ul li a p {
+  margin: 0.5rem 0 0;
+}
+
+/* HOME */
 header > h1 + p {
   font-size: 1.9em;
   line-height: 1.3em;

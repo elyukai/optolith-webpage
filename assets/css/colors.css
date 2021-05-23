@@ -9,7 +9,7 @@
   --blue: #0075ac;
   --bright-blue: #3bb8f1;
   --layout-unit: 20px;
-  --max-width: 800px;
+  --max-width: 55rem;
 
 	--separator-color: var(--grey);
 	--separator-color-halftransparent: rgba(122, 122, 122, .3);
@@ -30,4 +30,6 @@
   --footer-text-color: var(--grey);
   --horizontal-padding: var(--layout-unit);
   --legal-text: var(--dark-grey);
+  --code-color: #cac9c7;
+  --code-background: var(--dark-grey);
 }

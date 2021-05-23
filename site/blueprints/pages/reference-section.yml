@@ -1,0 +1,38 @@
+title: Reference Section
+icon: 📝
+num: zero
+
+columns:
+  content:
+    width: 2/3
+    fields:
+      intro:
+        type: text
+        help: A short description of what this page is about. Used both at the beginning of the respective page and in references to this page.
+      text:
+        type: textarea
+        size: huge
+        required: true
+        uploads: image
+  children:
+    width: 1/3
+    sections:
+      childrenSettings:
+        type: fields
+        fields:
+          hideChildren:
+            type: toggle
+            label: Hide Children Section
+            text:
+              - Show
+              - Hide
+            translate: false
+      children:
+        type: pages
+        sortable: false
+        templates:
+          - reference-section
+          - reference-article
+      files:
+        type: files
+        template: image
