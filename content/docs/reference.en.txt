@@ -1,0 +1,16 @@
+Title: Docs
+
+----
+
+Headline: Documentation
+
+----
+
+Text:
+
+Welcome to the technical documentation for Optolith! The documentation is split into two parts:
+
+- The flat-file database and
+- The desktop app.
+
+This way, you can contribute to only one part of the project more easily and it may also help if you integrate into Optolith data and endpoints.

@@ -13,8 +13,14 @@
 */
 ?>
 <header class="h1">
+  <?php isset($breadcrumbs) && $breadcrumbs === true ? snippet('breadcrumbs') : null ?>
   <h1><?= $page->headline()->or($page->title())->html() ?></h1>
   <?php if ($page->subheadline()->isNotEmpty()) : ?>
     <p><?= $page->subheadline()->html() ?></p>
   <?php endif ?>
 </header>
+<?php if ($page->intro()->isNotEmpty()) : ?>
+  <section class="intro">
+    <p><?= $page->intro()->kti() ?></p>
+  </section>
+<?php endif ?>

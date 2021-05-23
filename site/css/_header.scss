@@ -1,0 +1,59 @@
+body > header {
+  height: calc(var(--layout-unit) * 4);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+
+  #header-inner {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none outside none;
+    height: 5rem;
+
+    li {
+      margin-left: 1.5rem;
+
+      &::before {
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        display: block;
+
+        &,
+        &:visited {
+          color: var(--link-color);
+          z-index: 2;
+        }
+
+        &:hover {
+          color: var(--link-color-hover);
+        }
+      }
+    }
+  }
+
+  #header-logo {
+    z-index: -1;
+    pointer-events: none;
+    display: block;
+    height: 2.5rem;
+  }
+}

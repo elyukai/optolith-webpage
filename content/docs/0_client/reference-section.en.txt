@@ -1,0 +1,13 @@
+Title: Client
+
+----
+
+Intro: Introduction, guides and references for the Optolith desktop client.
+
+----
+
+Text: The `2.0.0` brought a lot of architectural changes such as incorporating the OCaml language, but a huge issue with previous versions was the lack of code documentation. This website tries to change that, providing both high-level explanations of concepts and structures as well as detailed descriptions of single modules.
+
+----
+
+Hidechildren: false

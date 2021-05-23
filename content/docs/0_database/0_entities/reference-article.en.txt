@@ -1,0 +1,9 @@
+Title: Entities
+
+----
+
+Intro: 
+
+----
+
+Text: This entity reference is still empty, please check out the schema files for now! 🙈

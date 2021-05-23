@@ -1,0 +1,35 @@
+Title: Generating Module Code
+
+----
+
+Intro: Save time by auto-generating code for later adjustment.
+
+----
+
+Text:
+
+## Convert syntax
+
+Using `bsrefmt`, you can convert between syntaxes:
+
+```sh
+./node_modules/.bin/bsrefmt path/to/file --print=syntax
+```
+
+`syntax` can be `res`, `re` and `ml`. The converted code from the referenced file will be output to command line.
+
+## Interface files
+
+Using `bsc`, you can generate an interface file in OCaml syntax if only the implementation file is present:
+
+```sh
+./node_modules/.bin/bsc ./lib/bs/path/to/file.cmi
+```
+
+To generate in Reason syntax, provide the `-bs-re-out` flag.
+
+```sh
+./node_modules/.bin/bsc -bs-re-out ./lib/bs/path/to/file.cmi
+```
+
+The generated code will be output to command line.

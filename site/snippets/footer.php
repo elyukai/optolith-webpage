@@ -29,7 +29,7 @@
     </div>
   </footer>
 
-  <?= js(['@auto']) ?>
+  <?= js(['assets/js/highlight.pack.js', 'assets/js/highlight.js', '@auto']) ?>
 
 </body>
 

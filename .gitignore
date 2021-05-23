@@ -46,3 +46,6 @@ Icon
 # License
 # ---------------
 /site/config/.license
+
+# Node
+node_modules
