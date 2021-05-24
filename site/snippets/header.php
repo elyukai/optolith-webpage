@@ -19,10 +19,9 @@
 <body>
 
   <header>
-    <div id="header-inner">
+    <div>
       <a class="logo" href="<?= $site->url() ?>">
-        <img src="<?= url('assets/images/logo.svg') ?>" id="header-logo" alt="<?= $site->title()->html() ?>" />
-        <!-- <object type="image/svg+xml" data="<?= url('assets/images/logo.svg') ?>" id="header-logo"><?= $site->title()->html() ?></object> -->
+        <?php snippet('icons/logo', ['label' => $site->title()->html()]) ?>
       </a>
 
       <nav class="menu">
@@ -36,4 +35,3 @@
   </header>
 
   <main>
-    <div id="main-inner">

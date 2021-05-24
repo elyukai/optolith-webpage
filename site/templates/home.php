@@ -1,24 +1,24 @@
 <?php snippet('header') ?>
 
-<?php snippet('intro') ?>
+<article>
+  <?php snippet('intro', ['intro' => $page->firstText()]) ?>
 
-<div class="text">
-  <div class="promo">
-    <?= $page->text()->kt() ?>
-  </div>
-  <?php
-  $download = $site->page('download');
-  if ($download) : ?>
-  <p>
-    <a href="<?= $download->url() ?>" class="btn"><?= $page->downloadtext()->html() ?></a>
-  </p>
+  <section class="image"></section>
+
+  <section class="text"><?= $page->secondText()->kt() ?></section>
+
+  <?php if ($download = $site->page('download')) : ?>
+    <section class="cta"><a href="<?= $download->url() ?>" class="btn btn--primary"><?= $download->title()->kti() ?></a></section>
   <?php endif ?>
-  <h2><?= t('community') ?></h2>
-  <ul>
-    <?php foreach ($page->communitylinks()->toStructure() as $communitylink) : ?>
-      <li><a href="<?= $communitylink->link()->html() ?>"><?= $communitylink->name()->html() ?></a></li>
-    <?php endforeach ?>
-  </ul>
-</div>
+
+  <section class="text">
+    <h2><?= t('community') ?></h2>
+    <ul class="community-links">
+      <?php foreach ($page->communitylinks()->toStructure() as $communitylink) : ?>
+        <li><a href="<?= $communitylink->link()->html() ?>"><?= $communitylink->name()->html() ?></a></li>
+      <?php endforeach ?>
+    </ul>
+  </section>
+</article>
 
 <?php snippet('footer') ?>

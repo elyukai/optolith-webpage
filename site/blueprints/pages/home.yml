@@ -7,11 +7,11 @@ fields:
     required: true
   gap:
     width: 1/2
-  subheadline:
-    type: text
-    width: 1/2
+  firstText:
+    type: textarea
+    size: medium
     required: true
-  text:
+  secondText:
     type: textarea
     size: medium
     required: true

@@ -2,19 +2,19 @@ Title: Startseite
 
 ----
 
-Headline: Optolith
+Headline: Die Zwölfe zum Gruße
 
 ----
 
-Subheadline: Charaktererstellung und -verwaltung für DSA5
+Firsttext: Optolith ist eine Anwendung zum Erstellen und Verwalten von Charakteren für das Pen-and-Paper-Rollenspiel *Das&nbsp;Schwarze&nbsp;Auge&nbsp;5* von Ulisses Spiele.
 
 ----
 
-Text: Optolith ist ein Tool zum Erstellen und Verwalten von Charakteren für das Pen-and-Paper-Rollenspiel *Das Schwarze Auge 5* von Ulisses Spiele. Wenn du Optolith benutzt, muss du dich nicht mehr darum kümmern, ob du alle Regeln einhältst -- denn das übernimmt es für dich! Es bietet dir außerdem eine übersichtliche Benutzeroberfläche, du kannst es sowohl per Maus als auch per Touch optimal bedienen und es kann dir Regeln und Crunch-Texte anzeigen, während du einen Charakter erstellst oder editierst. Damit du dich auf das Wesentliche bei der Charaktererstellung und -verwaltung konzentrieren kann: Die Charaktere selbst.
+Secondtext: Wenn du Optolith benutzt, muss du dich nicht mehr darum kümmern, ob du alle Regeln einhältst -- denn das übernimmt es für dich! Es bietet dir außerdem eine übersichtliche Benutzeroberfläche, du kannst es sowohl per Maus als auch per Touch optimal bedienen und es kann dir Regeln und Crunch-Texte anzeigen, während du einen Charakter erstellst oder editierst. Damit du dich auf das Wesentliche bei der Charaktererstellung und -verwaltung konzentrieren kann: *Deine Charaktere.*
 
 ----
 
-Downloadtext: Optolith herunterladen
+Downloadtext: Herunterladen
 
 ----
 

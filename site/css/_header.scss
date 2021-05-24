@@ -1,5 +1,4 @@
 body > header {
-  height: 5rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -9,12 +8,28 @@ body > header {
   justify-content: center;
   z-index: 10;
 
-  #header-inner {
+  > div {
     width: 100%;
+    height: var(--header-height);
     max-width: var(--max-width);
-    padding: 0 1.5rem;
+    padding: 0 1.1rem;
     display: flex;
     align-items: center;
+  }
+
+  a.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+
+    > svg {
+      z-index: -1;
+      pointer-events: none;
+      display: block;
+      height: 1.2rem;
+    }
   }
 
   nav ul {
@@ -25,7 +40,7 @@ body > header {
     list-style: none outside none;
 
     li {
-      margin-left: 1.5rem;
+      margin-left: 0.8rem;
 
       &::before {
         display: none;
@@ -33,26 +48,19 @@ body > header {
 
       a {
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1rem;
+        font-weight: 500;
         display: block;
 
-        &,
-        &:visited {
-          color: var(--link-color);
+        & {
+          color: var(--text-color-1);
           z-index: 2;
         }
 
         &:hover {
-          color: var(--link-color-hover);
+          color: var(--link-color);
         }
       }
     }
-  }
-
-  #header-logo {
-    z-index: -1;
-    pointer-events: none;
-    display: block;
-    height: 2.5rem;
   }
 }

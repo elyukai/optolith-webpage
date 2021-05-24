@@ -1,13 +1,10 @@
 @use "fonts";
 @use "globals";
 @use "header";
+@use "buttons";
 @use "docs";
 @use "highlight";
 @use "footer";
-
-:root {
-  font-size: 100%;
-}
 
 * {
   box-sizing: border-box;
@@ -18,7 +15,7 @@
   color: var(--selection-color);
 }
 
-.hidden {
+.visually-hidden {
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -31,103 +28,78 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   background: var(--background-color);
-  font: 400 1.3rem/1.6em "Alegreya Sans";
-  color: var(--text-color-3);
-  letter-spacing: 0.03em;
-  min-height: calc(100vh - 200px);
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-#logo {
-  height: 120px;
-  width: 120px;
-}
-
-a.btn,
-button {
-  border: 1px solid var(--link-color);
-  padding: 0.8rem 1.5rem;
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  min-width: 140px;
-  letter-spacing: 0.1em;
-  font: bold 1rem/1.4em "Alegreya";
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 1rem 0;
-
-  &:hover {
-    border-color: var(--link-color-hover);
-  }
-
-  &:active {
-    border-color: var(--link-color-active);
-  }
+  font: var(--text);
+  color: var(--text-color-1);
 }
 
 /* MAIN */
 
 main {
-  display: flex;
-  justify-content: center;
-  padding: 5rem 0 0;
-}
+  padding: var(--header-height) 0 0;
 
-#main-inner {
-  width: 100%;
-  max-width: var(--max-width);
-  padding: 0 1.5rem;
-}
+  > article {
+    > header {
+      padding: 2rem 1.2rem 0;
+    }
+  }
 
-header.h1 {
-  margin-top: 2.5rem;
+  > section,
+  > article > section {
+    padding: 0 1.2rem;
+  }
 
-  > h1 {
-    margin-top: 0;
+  section {
+    margin: 2.4rem 0;
+
+    &.intro {
+      font: var(--featured-text);
+      margin: 1rem 0;
+    }
+
+    &.cta {
+      margin: 4rem 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      > .btn {
+        width: calc(100% - 2.4rem);
+      }
+    }
   }
 }
 
 h1 {
-  font: italic normal 400 2.8rem/1.2em "Alegreya Sans";
-  margin: 68px 0 0;
+  font: var(--heading-1);
+  margin: 0;
   color: var(--text-color-1);
 }
 
 h2 {
-  font: normal 400 2rem/1.1em "Alegreya Sans";
-  margin: 2rem 0 1rem;
+  font: var(--heading-2);
+  margin: 1.6rem 0 1.2rem;
   color: var(--text-color-1);
 }
 
 h3 {
-  font: normal 400 1.6rem/1.1em "Alegreya Sans";
-  margin: 1.5rem 0 1rem;
+  font: var(--heading-3);
+  margin: 1.2rem 0 1rem;
   color: var(--text-color-1);
 }
 
 h4 {
-  font: normal 400 1.2rem/1.1em "Alegreya Sans";
-  margin: 1.25rem 0 1rem;
+  font: var(--heading-4);
+  margin: 1rem 0 0.8rem;
   color: var(--text-color-1);
 }
 
-a,
-a:visited {
+a {
   color: var(--link-color);
-}
 
-a:hover {
-  color: var(--link-color-hover);
+  &:hover {
+    color: var(--link-color-hover);
+  }
 }
 
 p {
@@ -187,13 +159,4 @@ pre > code.hljs {
   background: unset;
   padding: unset;
   border-radius: unset;
-}
-
-section {
-  margin: 2rem 0;
-
-  &.intro {
-    margin: 1rem 0 2rem;
-    font-size: 1.4rem;
-  }
 }

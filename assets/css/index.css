@@ -1,146 +1,144 @@
+/**
+ * This is a variable font
+ * You can controll variable axes as shown below:
+ * font-variation-settings: 'wght' 900.0;
+ *
+ * available axes:
+ *
+ * 'wght' (range from 100.0 to 900.0)
+ *
+ */
 @font-face {
-  font-family: "Alegreya Sans";
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Thin.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Thin.woff") format("woff");
+  font-weight: 100;
+  font-display: swap;
   font-style: normal;
-  font-weight: 700;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-Bold.otf") format("opentype");
 }
 @font-face {
-  font-family: "Alegreya Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-BoldItalic.otf") format("opentype");
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extralight.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extralight.woff") format("woff");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Alegreya Sans";
-  font-style: normal;
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Light.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Light.woff") format("woff");
   font-weight: 300;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans";
-  font-style: italic;
-  font-weight: 300;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-LightItalic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans";
+  font-display: swap;
   font-style: normal;
+}
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Medium.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Medium.woff") format("woff");
   font-weight: 500;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-Medium.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Alegreya Sans";
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Bold.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Black.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Black.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+ * This is a variable font
+ * You can controll variable axes as shown below:
+ * font-variation-settings: 'wght' 900.0;
+ *
+ * available axes:
+ *
+ * 'wght' (range from 400.0 to 900.0)
+ *
+ */
+/**
+ * This is a variable font
+ * You can controll variable axes as shown below:
+ * font-variation-settings: 'wght' 900.0;
+ *
+ * available axes:
+ *
+ * 'wght' (range from 400.0 to 900.0)
+ *
+ */
+@font-face {
+  font-family: "Neco-Regular";
+  src: url("/assets/fonts/Neco/Neco-Regular.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neco-Italic";
+  src: url("/assets/fonts/Neco/Neco-Italic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Italic.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
   font-style: italic;
+}
+@font-face {
+  font-family: "Neco-Medium";
+  src: url("/assets/fonts/Neco/Neco-Medium.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Medium.woff") format("woff");
   font-weight: 500;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-MediumItalic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans";
+  font-display: swap;
   font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: "Alegreya Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSans-Italic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans SC";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans SC";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-BoldItalic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans SC";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans SC";
-  font-style: italic;
-  font-weight: 300;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-LightItalic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans SC";
-  font-style: normal;
+  font-family: "Neco-MediumItalic";
+  src: url("/assets/fonts/Neco/Neco-MediumItalic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-MediumItalic.woff") format("woff");
   font-weight: 500;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-Medium.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans SC";
+  font-display: swap;
   font-style: italic;
-  font-weight: 500;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-MediumItalic.otf") format("opentype");
 }
 @font-face {
-  font-family: "Alegreya Sans SC";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya Sans SC";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/assets/fonts/AlegreyaSans/AlegreyaSansSC-Italic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya";
-  font-style: normal;
+  font-family: "Neco-Bold";
+  src: url("/assets/fonts/Neco/Neco-Bold.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Bold.woff") format("woff");
   font-weight: 700;
-  src: url("/assets/fonts/Alegreya/Alegreya-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/assets/fonts/Alegreya/Alegreya-BoldItalic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya";
+  font-display: swap;
   font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/Alegreya/Alegreya-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: "Alegreya";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/assets/fonts/Alegreya/Alegreya-Italic.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya SC";
-  font-style: normal;
+  font-family: "Neco-BoldItalic";
+  src: url("/assets/fonts/Neco/Neco-BoldItalic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-BoldItalic.woff") format("woff");
   font-weight: 700;
-  src: url("/assets/fonts/Alegreya/AlegreyaSC-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Alegreya SC";
+  font-display: swap;
   font-style: italic;
-  font-weight: 700;
-  src: url("/assets/fonts/Alegreya/AlegreyaSC-BoldItalic.otf") format("opentype");
 }
 @font-face {
-  font-family: "Alegreya SC";
+  font-family: "Neco-Black";
+  src: url("/assets/fonts/Neco/Neco-Black.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Black.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
   font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/Alegreya/AlegreyaSC-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: "Alegreya SC";
+  font-family: "Neco-BlackItalic";
+  src: url("/assets/fonts/Neco/Neco-BlackItalic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
   font-style: italic;
-  font-weight: 400;
-  src: url("/assets/fonts/Alegreya/AlegreyaSC-Italic.otf") format("opentype");
 }
 @font-face {
   font-family: "Fira Code";
@@ -167,59 +165,39 @@
   src: url("/assets/fonts/FiraCode/FiraCode-Bold.otf") format("opentype");
 }
 :root {
-  --gold: #826a3e;
-  --gold-50-bright: #79643c;
-  /* 50% brightness */
-  --dark-gold: #5d4517;
-  --white: #f7f4ed;
-  --extralight-grey: #f7f7f7;
-  --light-grey: #cac9c7;
-  --grey: #7a7a7a;
-  --dark-grey: #363636;
-  --black: #111;
-  --blue: #0075ac;
-  --bright-blue: #3bb8f1;
-  --text-color-1: var(--white);
-  --text-color-2: var(--light-grey);
-  --text-color-3: var(--grey);
-  --text-color-4: var(--dark-grey);
+  --white: #f5f5f5;
+  --light-gray: #bbbbbb;
+  --gray: #616161;
+  --dark-gray: #393939;
+  --black: #111111;
+  --gold: #836c45;
+  --dark-gold: #766847;
+  --text-color-1: var(--black);
+  --text-color-2: var(--gray);
+  --text-color-3: var(--light-gray);
   --brand-color-1: var(--gold);
-  --brand-color-2: var(--dark-gold);
-  --brand-color-3: var(--black);
-  --brand-color-4: var(--white);
-  --background-color: var(--black);
-  --link-color: var(--gold-50-bright);
-  --link-color-hover: var(--white);
+  --brand-color-2: var(--black);
+  --brand-color-3: var(--white);
+  --background-color: var(--white);
+  --link-color: var(--gold);
+  --link-color-hover: var(--black);
   --link-color-active: var(--dark-gold);
   --selection-color: var(--white);
-  --selection-background: var(--gold-50);
-  --code-color: var(--light-grey);
-  --code-background: var(--dark-grey);
-  --max-width: 55rem;
+  --selection-background: var(--gold);
+  --code-color: var(--dark-gray);
+  --code-background: var(--light-gray);
+  font-size: 20px;
+  --heading-1: 800 2rem/1.05em CabinetGrotesk;
+  --heading-2: 700 1.8rem/1.1em CabinetGrotesk;
+  --heading-3: 700 1.6rem/1.15em CabinetGrotesk;
+  --heading-4: 700 1.4rem/1.2em CabinetGrotesk;
+  --heading-5: 700 1.2rem/1.25em CabinetGrotesk;
+  --text: 400 1rem/1.4em Neco;
+  --featured-text: 400 1.2rem/1.25em Neco;
+  --header-height: 96px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color-1: var(--black);
-    --text-color-2: var(--dark-grey);
-    --text-color-3: var(--grey);
-    --text-color-4: var(--light-grey);
-    --brand-color-1: var(--gold);
-    --brand-color-2: var(--dark-gold);
-    --brand-color-3: var(--black);
-    --brand-color-4: var(--white);
-    --background-color: var(--extralight-grey);
-    --link-color: var(--gold-50-bright);
-    --link-color-hover: var(--black);
-    --link-color-active: var(--dark-gold);
-    --selection-color: var(--white);
-    --selection-background: var(--gold-50-bright);
-    --code-color: var(--dark-grey);
-    --code-background: var(--light-grey);
-  }
-}
 body > header {
-  height: 5rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -229,12 +207,26 @@ body > header {
   justify-content: center;
   z-index: 10;
 }
-body > header #header-inner {
+body > header > div {
   width: 100%;
+  height: var(--header-height);
   max-width: var(--max-width);
-  padding: 0 1.5rem;
+  padding: 0 1.1rem;
   display: flex;
   align-items: center;
+}
+body > header a.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+}
+body > header a.logo > svg {
+  z-index: -1;
+  pointer-events: none;
+  display: block;
+  height: 1.2rem;
 }
 body > header nav ul {
   margin: 0;
@@ -244,28 +236,66 @@ body > header nav ul {
   list-style: none outside none;
 }
 body > header nav ul li {
-  margin-left: 1.5rem;
+  margin-left: 0.8rem;
 }
 body > header nav ul li::before {
   display: none;
 }
 body > header nav ul li a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
   display: block;
 }
-body > header nav ul li a, body > header nav ul li a:visited {
-  color: var(--link-color);
+body > header nav ul li a {
+  color: var(--text-color-1);
   z-index: 2;
 }
 body > header nav ul li a:hover {
-  color: var(--link-color-hover);
+  color: var(--link-color);
 }
-body > header #header-logo {
-  z-index: -1;
-  pointer-events: none;
-  display: block;
-  height: 2.5rem;
+
+a.btn,
+button {
+  border: 2px solid var(--text-color-1);
+  color: var(--text-color-1);
+  padding: 0.6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--heading-5);
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+a.btn:hover,
+button:hover {
+  border-color: var(--link-color);
+  color: var(--link-color);
+}
+a.btn:active,
+button:active {
+  border-color: var(--link-color-active);
+  color: var(--link-color-active);
+}
+
+a.btn.btn--primary,
+button.primary {
+  color: var(--background-color);
+  border-color: var(--text-color-1);
+  background-color: var(--text-color-1);
+}
+a.btn.btn--primary:hover,
+button.primary:hover {
+  color: var(--background-color);
+  border-color: var(--link-color);
+  background-color: var(--link-color);
+}
+a.btn.btn--primary:active,
+button.primary:active {
+  color: var(--background-color);
+  border-color: var(--link-color-active);
+  background-color: var(--link-color-active);
 }
 
 nav.breadcrumbs {
@@ -603,10 +633,6 @@ footer #footer-logo {
   grid-area: logo;
 }
 
-:root {
-  font-size: 100%;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -616,7 +642,7 @@ footer #footer-logo {
   color: var(--selection-color);
 }
 
-.hidden {
+.visually-hidden {
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -629,98 +655,66 @@ footer #footer-logo {
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   background: var(--background-color);
-  font: 400 1.3rem/1.6em "Alegreya Sans";
-  color: var(--text-color-3);
-  letter-spacing: 0.03em;
-  min-height: calc(100vh - 200px);
-}
-body > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#logo {
-  height: 120px;
-  width: 120px;
-}
-
-a.btn,
-button {
-  border: 1px solid var(--link-color);
-  padding: 0.8rem 1.5rem;
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  min-width: 140px;
-  letter-spacing: 0.1em;
-  font: bold 1rem/1.4em "Alegreya";
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 1rem 0;
-}
-a.btn:hover,
-button:hover {
-  border-color: var(--link-color-hover);
-}
-a.btn:active,
-button:active {
-  border-color: var(--link-color-active);
+  font: var(--text);
+  color: var(--text-color-1);
 }
 
 /* MAIN */
 main {
+  padding: var(--header-height) 0 0;
+}
+main > article > header {
+  padding: 2rem 1.2rem 0;
+}
+main > section,
+main > article > section {
+  padding: 0 1.2rem;
+}
+main section {
+  margin: 2.4rem 0;
+}
+main section.intro {
+  font: var(--featured-text);
+  margin: 1rem 0;
+}
+main section.cta {
+  margin: 4rem 0;
   display: flex;
   justify-content: center;
-  padding: 5rem 0 0;
+  position: relative;
 }
-
-#main-inner {
-  width: 100%;
-  max-width: var(--max-width);
-  padding: 0 1.5rem;
-}
-
-header.h1 {
-  margin-top: 2.5rem;
-}
-header.h1 > h1 {
-  margin-top: 0;
+main section.cta > .btn {
+  width: calc(100% - 2.4rem);
 }
 
 h1 {
-  font: italic normal 400 2.8rem/1.2em "Alegreya Sans";
-  margin: 68px 0 0;
+  font: var(--heading-1);
+  margin: 0;
   color: var(--text-color-1);
 }
 
 h2 {
-  font: normal 400 2rem/1.1em "Alegreya Sans";
-  margin: 2rem 0 1rem;
+  font: var(--heading-2);
+  margin: 1.6rem 0 1.2rem;
   color: var(--text-color-1);
 }
 
 h3 {
-  font: normal 400 1.6rem/1.1em "Alegreya Sans";
-  margin: 1.5rem 0 1rem;
+  font: var(--heading-3);
+  margin: 1.2rem 0 1rem;
   color: var(--text-color-1);
 }
 
 h4 {
-  font: normal 400 1.2rem/1.1em "Alegreya Sans";
-  margin: 1.25rem 0 1rem;
+  font: var(--heading-4);
+  margin: 1rem 0 0.8rem;
   color: var(--text-color-1);
 }
 
-a,
-a:visited {
+a {
   color: var(--link-color);
 }
-
 a:hover {
   color: var(--link-color-hover);
 }
@@ -777,14 +771,6 @@ pre > code.hljs {
   background: unset;
   padding: unset;
   border-radius: unset;
-}
-
-section {
-  margin: 2rem 0;
-}
-section.intro {
-  margin: 1rem 0 2rem;
-  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=index.css.map */
