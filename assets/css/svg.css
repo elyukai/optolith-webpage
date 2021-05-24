@@ -4,35 +4,52 @@
   /* 50% brightness */
   --dark-gold: #5d4517;
   --white: #f7f4ed;
+  --extralight-grey: #f7f7f7;
+  --light-grey: #cac9c7;
   --grey: #7a7a7a;
   --dark-grey: #363636;
   --black: #111;
   --blue: #0075ac;
   --bright-blue: #3bb8f1;
-  --separator-color: var(--grey);
-  --separator-color-halftransparent: rgba(122, 122, 122, 0.3);
-  --secondary-text-color: rgba(122, 122, 122, 0.5);
-  --disabled-color: rgba(122, 122, 122, 0.3);
-  --separator-color-transparent: rgba(122, 122, 122, 0.2);
-  --selection-color: var(--gold-50);
-  --accent-color: var(--gold);
-  --accent-color-intense: var(--dark-gold);
+  --text-color-1: var(--white);
+  --text-color-2: var(--light-grey);
+  --text-color-3: var(--grey);
+  --text-color-4: var(--dark-grey);
+  --brand-color-1: var(--gold);
+  --brand-color-2: var(--dark-gold);
+  --brand-color-3: var(--black);
+  --brand-color-4: var(--white);
   --background-color: var(--black);
-  --background-color-transparent06: transparentize(#111, 0.4);
-  --background-color-transparent08: transparentize(#111, 0.2);
-  --headings-color: var(--white);
-  --text-color: var(--grey);
   --link-color: var(--gold-50-bright);
   --link-color-hover: var(--white);
   --link-color-active: var(--dark-gold);
-  --footer-text-color: var(--grey);
-  --horizontal-padding: var(--layout-unit);
-  --legal-text: var(--dark-grey);
-  --code-color: #cac9c7;
+  --selection-color: var(--white);
+  --selection-background: var(--gold-50);
+  --code-color: var(--light-grey);
   --code-background: var(--dark-grey);
   --max-width: 55rem;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color-1: var(--black);
+    --text-color-2: var(--dark-grey);
+    --text-color-3: var(--grey);
+    --text-color-4: var(--light-grey);
+    --brand-color-1: var(--gold);
+    --brand-color-2: var(--dark-gold);
+    --brand-color-3: var(--black);
+    --brand-color-4: var(--white);
+    --background-color: var(--extralight-grey);
+    --link-color: var(--gold-50-bright);
+    --link-color-hover: var(--black);
+    --link-color-active: var(--dark-gold);
+    --selection-color: var(--white);
+    --selection-background: var(--gold-50-bright);
+    --code-color: var(--dark-grey);
+    --code-background: var(--light-grey);
+  }
+}
 svg#logo .cls-1 {
   fill: var(--gold);
 }

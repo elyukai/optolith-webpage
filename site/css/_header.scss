@@ -1,5 +1,5 @@
 body > header {
-  height: calc(var(--layout-unit) * 4);
+  height: 5rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -23,7 +23,6 @@ body > header {
     display: flex;
     align-items: center;
     list-style: none outside none;
-    height: 5rem;
 
     li {
       margin-left: 1.5rem;

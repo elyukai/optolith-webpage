@@ -12,6 +12,7 @@ Footerlinks:
 
 - home
 - download
+- docs
 - privacy
 - licenses
 - imprint

@@ -14,8 +14,8 @@
 }
 
 ::selection {
-  background: var(--dark-gold);
-  color: var(--white);
+  background: var(--selection-background);
+  color: var(--selection-color);
 }
 
 .hidden {
@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   background: var(--background-color);
   font: 400 1.3rem/1.6em "Alegreya Sans";
-  color: var(--text-color);
+  color: var(--text-color-3);
   letter-spacing: 0.03em;
   min-height: calc(100vh - 200px);
 
@@ -100,25 +100,25 @@ header.h1 {
 h1 {
   font: italic normal 400 2.8rem/1.2em "Alegreya Sans";
   margin: 68px 0 0;
-  color: var(--headings-color);
+  color: var(--text-color-1);
 }
 
 h2 {
   font: normal 400 2rem/1.1em "Alegreya Sans";
   margin: 2rem 0 1rem;
-  color: var(--headings-color);
+  color: var(--text-color-1);
 }
 
 h3 {
   font: normal 400 1.6rem/1.1em "Alegreya Sans";
   margin: 1.5rem 0 1rem;
-  color: var(--headings-color);
+  color: var(--text-color-1);
 }
 
 h4 {
   font: normal 400 1.2rem/1.1em "Alegreya Sans";
   margin: 1.25rem 0 1rem;
-  color: var(--headings-color);
+  color: var(--text-color-1);
 }
 
 a,
@@ -136,7 +136,7 @@ p {
 
 ul {
   margin: 0.75rem 0 0;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 1.2em;
   display: block;
 
   li {
@@ -151,11 +151,11 @@ ul {
       content: "";
       display: block;
       position: absolute;
-      margin-left: -24px;
-      margin-top: 10px;
+      margin-left: -1.1em;
+      margin-top: 0.6em;
       width: 8px;
       height: 8px;
-      background: var(--separator-color-halftransparent);
+      background: var(--text-color-4);
       transform: rotate(45deg);
     }
   }

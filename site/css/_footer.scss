@@ -27,7 +27,7 @@ footer {
   }
 
   .legal {
-    color: var(--legal-text);
+    color: var(--text-color-4);
     font-size: 0.9em;
     margin: 10px 0 0;
     grid-area: legal;
@@ -56,11 +56,11 @@ footer {
       a,
       a:visited {
         text-decoration: none;
-        color: var(--footer-text-color);
+        color: var(--text-color-3);
       }
 
       a:hover {
-        color: var(--link-color-hover);
+        color: var(--text-color-1);
       }
     }
   }
