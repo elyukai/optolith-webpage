@@ -1,7 +1,104 @@
-header > h1 + p {
-  font-size: 1.9rem;
-  line-height: 1.3em;
-  color: var(--text-color);
-  font-style: italic;
-  margin: 0;
+@use "../responsive";
+
+section.image {
+  position: relative;
+  overflow: hidden;
+  padding: 0 var(--padding-x) 4px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: var(--brand-color-1);
+  }
+
+  &::before {
+    width: 4px;
+    height: calc(100% - 4px);
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    height: 4px;
+    width: calc(100% - 2 * var(--padding-x));
+    bottom: 0;
+    left: var(--padding-x);
+  }
+
+  img {
+    height: 20rem;
+    min-width: calc(100% + var(--padding-x));
+    display: block;
+    object-fit: cover;
+  }
+
+  @media (min-width: responsive.$screen-md) {
+    padding: 0 calc(var(--padding-x) / 2) 4px;
+
+    &::after {
+      width: calc(100% - var(--padding-x));
+      left: calc(var(--padding-x) / 2);
+    }
+
+    img {
+      height: auto;
+      width: calc(100% + var(--padding-x) / 2);
+    }
+  }
+
+  @media (min-width: responsive.$screen-lg) {
+    padding: 0 0 4px 150px;
+    width: 900px;
+    overflow: visible;
+
+    &::before {
+      left: unset;
+      right: calc((900px - 100vw) / 2);
+    }
+
+    &::after {
+      width: 300px;
+      left: 150px;
+    }
+
+    img {
+      height: auto;
+      width: 750px;
+    }
+  }
+
+  @media (min-width: responsive.$screen-xl) {
+    margin: 4rem auto;
+    padding-left: 0;
+    width: 900px;
+    overflow: visible;
+
+    &::after {
+      width: 600px;
+      left: 0;
+    }
+
+    img {
+      height: auto;
+      width: 900px;
+    }
+  }
+}
+
+ul.community-links {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 1.2rem;
+  list-style: none;
+
+  > li {
+    margin: 0;
+
+    a {
+      margin: 0;
+    }
+  }
 }

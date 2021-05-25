@@ -1,18 +1,19 @@
+@use "responsive";
+
 body > header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   background: var(--background-color);
-  display: flex;
-  justify-content: center;
   z-index: 10;
 
   > div {
     width: 100%;
     height: var(--header-height);
-    max-width: var(--max-width);
-    padding: 0 1.1rem;
+    max-width: 600px;
+    margin: 0;
+    padding: 0 calc(var(--padding-x) - 0.1rem);
     display: flex;
     align-items: center;
   }
@@ -60,6 +61,26 @@ body > header {
         &:hover {
           color: var(--link-color);
         }
+      }
+    }
+  }
+
+  @media (min-width: responsive.$screen-lg) {
+    > div {
+      max-width: 900px;
+      justify-content: space-between;
+      padding-left: 150px;
+      margin: 0 auto;
+    }
+
+    a.logo {
+      display: block;
+      height: 2.4rem;
+      width: 2.1rem;
+
+      > svg {
+        height: 2.4rem;
+        margin-left: -0.15rem;
       }
     }
   }

@@ -6,6 +6,9 @@ columns:
   content:
     width: 2/3
     fields:
+      headline:
+        type: text
+        help: If specified, it replaces the title on the page itself.
       intro:
         type: text
         help: A short description of what this page is about. Used both at the beginning of the respective page and in references to this page.

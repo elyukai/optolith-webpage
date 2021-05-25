@@ -13,10 +13,10 @@ Footerlinks:
 - home
 - download
 - docs
-- privacy
 - licenses
+- privacy
 - imprint
 
 ----
 
-Legal: © 2017-present Lukas Obermann and contributors under license of Ulisses Spiele
+Legal: Lukas Obermann and contributors under license of Ulisses Spiele

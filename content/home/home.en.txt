@@ -10,11 +10,17 @@ Firsttext: Optolith is a tool to create and manage characters for the Pen & Pape
 
 ----
 
+Image:
+
+- english-dark-1.png
+
+----
+
 Secondtext: If you use Optolith, you don't have to worry anymore if you follow all the rules -- because it does it for you! It also offers you a clean user interface, you can use with both a mouse and touch, and it can display rules and crunch texts while you create or edit a character. So you can concentrate on the essentials of character creation and management: *Your characters.*
 
 ----
 
-Downloadtext: Download
+Communityheadline: Join the Community!
 
 ----
 

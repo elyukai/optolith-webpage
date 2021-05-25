@@ -12,56 +12,48 @@
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Thin.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Thin.woff") format("woff");
   font-weight: 100;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extralight.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extralight.woff") format("woff");
   font-weight: 200;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Light.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Light.woff") format("woff");
   font-weight: 300;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff") format("woff");
   font-weight: 400;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Medium.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Medium.woff") format("woff");
   font-weight: 500;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Bold.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Bold.woff") format("woff");
   font-weight: 700;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff") format("woff");
   font-weight: 800;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "CabinetGrotesk";
   src: url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Black.woff2") format("woff2"), url("/assets/fonts/CabinetGrotesk/CabinetGrotesk-Black.woff") format("woff");
   font-weight: 900;
-  font-display: swap;
   font-style: normal;
 }
 /**
@@ -85,59 +77,51 @@
  *
  */
 @font-face {
-  font-family: "Neco-Regular";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-Regular.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Regular.woff") format("woff");
   font-weight: 400;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neco-Italic";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-Italic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Italic.woff") format("woff");
   font-weight: 400;
-  font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Neco-Medium";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-Medium.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Medium.woff") format("woff");
   font-weight: 500;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neco-MediumItalic";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-MediumItalic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-MediumItalic.woff") format("woff");
   font-weight: 500;
-  font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Neco-Bold";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-Bold.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Bold.woff") format("woff");
   font-weight: 700;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neco-BoldItalic";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-BoldItalic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-BoldItalic.woff") format("woff");
   font-weight: 700;
-  font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Neco-Black";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-Black.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-Black.woff") format("woff");
   font-weight: 900;
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neco-BlackItalic";
+  font-family: "Neco";
   src: url("/assets/fonts/Neco/Neco-BlackItalic.woff2") format("woff2"), url("/assets/fonts/Neco/Neco-BlackItalic.woff") format("woff");
   font-weight: 900;
-  font-display: swap;
   font-style: italic;
 }
 @font-face {
@@ -166,6 +150,7 @@
 }
 :root {
   --white: #f5f5f5;
+  --lighter-gray: #ececea;
   --light-gray: #bbbbbb;
   --gray: #616161;
   --dark-gray: #393939;
@@ -185,7 +170,10 @@
   --selection-color: var(--white);
   --selection-background: var(--gold);
   --code-color: var(--dark-gray);
-  --code-background: var(--light-gray);
+  --code-background: var(--lighter-gray);
+  --shadow-1: 0 6px 24px rgba(17, 17, 17, 0.2);
+  --shadow-2: 0 5px 20px rgba(17, 17, 17, 0.1);
+  --shadow-3: 0 4px 16px rgba(17, 17, 17, 0.05);
   font-size: 20px;
   --heading-1: 800 2rem/1.05em CabinetGrotesk;
   --heading-2: 700 1.8rem/1.1em CabinetGrotesk;
@@ -195,23 +183,38 @@
   --text: 400 1rem/1.4em Neco;
   --featured-text: 400 1.2rem/1.25em Neco;
   --header-height: 96px;
+  --padding-x: 1.2rem;
 }
 
+@media (min-width: 640px) {
+  :root {
+    --padding-x: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --padding-x: 4.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --padding-x: 0;
+  }
+}
 body > header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   background: var(--background-color);
-  display: flex;
-  justify-content: center;
   z-index: 10;
 }
 body > header > div {
   width: 100%;
   height: var(--header-height);
-  max-width: var(--max-width);
-  padding: 0 1.1rem;
+  max-width: 600px;
+  margin: 0;
+  padding: 0 calc(var(--padding-x) - 0.1rem);
   display: flex;
   align-items: center;
 }
@@ -254,6 +257,23 @@ body > header nav ul li a {
 body > header nav ul li a:hover {
   color: var(--link-color);
 }
+@media (min-width: 1024px) {
+  body > header > div {
+    max-width: 900px;
+    justify-content: space-between;
+    padding-left: 150px;
+    margin: 0 auto;
+  }
+  body > header a.logo {
+    display: block;
+    height: 2.4rem;
+    width: 2.1rem;
+  }
+  body > header a.logo > svg {
+    height: 2.4rem;
+    margin-left: -0.15rem;
+  }
+}
 
 a.btn,
 button {
@@ -282,24 +302,26 @@ button:active {
 a.btn.btn--primary,
 button.primary {
   color: var(--background-color);
-  border-color: var(--text-color-1);
+  border-color: transparent;
   background-color: var(--text-color-1);
+  box-shadow: var(--shadow-1);
 }
 a.btn.btn--primary:hover,
 button.primary:hover {
   color: var(--background-color);
-  border-color: var(--link-color);
+  border-color: transparent;
   background-color: var(--link-color);
 }
 a.btn.btn--primary:active,
 button.primary:active {
   color: var(--background-color);
-  border-color: var(--link-color-active);
+  border-color: transparent;
   background-color: var(--link-color-active);
 }
 
 nav.breadcrumbs {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
 }
 nav.breadcrumbs ol {
   margin: 0;
@@ -324,7 +346,7 @@ nav.breadcrumbs ol li:not(:last-child)::after {
   width: 0.5em;
   border-width: 2px 2px 0 0;
   border-style: solid;
-  border-color: var(--text-color-4);
+  border-color: var(--text-color-3);
   transform: rotate(45deg);
   margin-left: 0.5em;
 }
@@ -332,10 +354,10 @@ nav.breadcrumbs ol li a {
   display: block;
 }
 
-nav.reference-children {
-  margin: 4rem 0;
+section.reference-children {
+  margin: 4rem auto;
 }
-nav.reference-children ul {
+section.reference-children nav ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
@@ -343,46 +365,28 @@ nav.reference-children ul {
   list-style: none;
   align-items: stretch;
 }
-nav.reference-children ul li {
+section.reference-children nav ul li {
   position: relative;
   margin: 0;
 }
-nav.reference-children ul li::before {
+section.reference-children nav ul li::before {
   display: none;
 }
-nav.reference-children ul li a {
+section.reference-children nav ul li a {
   display: block;
   padding: 1.5rem;
   height: 100%;
   text-decoration: none;
+  box-shadow: var(--shadow-3);
+  transition: box-shadow 0.15s ease-in-out, color 0.15s ease-in-out;
 }
-nav.reference-children ul li a::before, nav.reference-children ul li a::after {
-  content: "";
-  position: absolute;
-  display: block;
-  pointer-events: none;
-  width: 1rem;
-  height: 100%;
-  border-style: solid;
-  border-color: var(--gold);
-  top: 0;
-  transition: width 0.15s ease-in-out;
+section.reference-children nav ul li a:hover {
+  box-shadow: var(--shadow-2);
 }
-nav.reference-children ul li a::before {
-  left: 0;
-  border-width: 1px 0 1px 1px;
-}
-nav.reference-children ul li a::after {
-  right: 0;
-  border-width: 1px 1px 1px 0;
-}
-nav.reference-children ul li a:hover::before, nav.reference-children ul li a:hover::after {
-  width: 50%;
-}
-nav.reference-children ul li a h3 {
+section.reference-children nav ul li a h3 {
   margin: 0;
 }
-nav.reference-children ul li a p {
+section.reference-children nav ul li a p {
   margin: 0.5rem 0 0;
 }
 
@@ -576,33 +580,20 @@ hue-6-2: #e6c07b
   }
 }
 footer {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
-  margin-top: 2rem;
-}
-footer #footer-inner {
-  width: 100%;
-  max-width: var(--max-width);
-  padding: 0 1.5rem;
+  padding: 4.5rem var(--padding-x);
+  margin-top: 2.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5em;
   display: grid;
-  grid-template-areas: "links logo" "other-langs logo" "legal legal";
-  grid-template-columns: 1fr 4rem;
-  grid-template-rows: repeat(3, auto);
-  gap: 1.5rem;
+  gap: 2rem;
+  grid-template-areas: "links" "other-langs" "legal";
+  align-items: end;
 }
-@media (min-width: 640px) {
-  footer #footer-inner {
-    grid-template-areas: "links other-langs logo" "legal legal logo";
-    grid-template-columns: 1fr 1fr 4rem;
-    grid-template-rows: repeat(2, auto);
-  }
+footer .links {
+  grid-area: links;
 }
-footer .legal {
-  color: var(--text-color-4);
-  font-size: 0.9em;
-  margin: 10px 0 0;
-  grid-area: legal;
+footer .other-languages {
+  grid-area: other-langs;
 }
 footer ul {
   list-style: none outside none;
@@ -611,26 +602,42 @@ footer ul {
   display: flex;
   flex-direction: column;
 }
-footer ul.links {
-  grid-area: links;
-}
-footer ul.other-languages {
-  grid-area: other-langs;
-}
 footer ul li::before {
   display: none;
 }
-footer ul li a,
-footer ul li a:visited {
+footer ul li a {
   text-decoration: none;
-  color: var(--text-color-3);
+  color: var(--text-color-2);
 }
 footer ul li a:hover {
   color: var(--text-color-1);
 }
-footer #footer-logo {
-  height: 4rem;
-  grid-area: logo;
+footer .legal {
+  grid-area: legal;
+  color: var(--text-color-3);
+  margin: 0;
+}
+@media (min-width: 640px) {
+  footer {
+    grid-template-areas: "links other-langs" "legal legal";
+  }
+  footer .other-languages {
+    text-align: right;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: 900px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "links links links other-langs other-langs other-langs" ". . legal legal legal legal";
+    gap: 2.4rem 0;
+  }
+  footer .legal {
+    text-align: right;
+  }
 }
 
 * {
@@ -657,6 +664,7 @@ body {
   padding: 0;
   background: var(--background-color);
   font: var(--text);
+  font-variant-numeric: lining-nums;
   color: var(--text-color-1);
 }
 
@@ -665,27 +673,68 @@ main {
   padding: var(--header-height) 0 0;
 }
 main > article > header {
-  padding: 2rem 1.2rem 0;
+  padding: 2rem var(--padding-x) 0;
+}
+@media (min-width: 1024px) {
+  main > article > header {
+    width: 600px;
+    padding-top: 5rem;
+    padding-right: 150px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1280px) {
+  main > article > header {
+    padding-top: 6rem;
+  }
 }
 main > section,
 main > article > section {
-  padding: 0 1.2rem;
-}
-main section {
   margin: 2.4rem 0;
+  padding: 0 var(--padding-x);
 }
-main section.intro {
+@media (min-width: 1024px) {
+  main > section,
+main > article > section {
+    width: 600px;
+    margin: 2.4rem auto;
+  }
+}
+main > section.intro,
+main > article > section.intro {
   font: var(--featured-text);
+  font-variant-numeric: lining-nums;
   margin: 1rem 0;
 }
-main section.cta {
+@media (min-width: 1024px) {
+  main > section.intro,
+main > article > section.intro {
+    padding-right: 150px;
+    margin: 1rem auto;
+  }
+}
+main > section.cta,
+main > article > section.cta {
   margin: 4rem 0;
   display: flex;
   justify-content: center;
   position: relative;
 }
-main section.cta > .btn {
-  width: calc(100% - 2.4rem);
+main > section.cta > .btn,
+main > article > section.cta > .btn {
+  width: calc(100% - 2 * var(--padding-x));
+}
+@media (min-width: 768px) {
+  main > section.cta > .btn,
+main > article > section.cta > .btn {
+    width: auto;
+  }
+}
+@media (min-width: 1024px) {
+  main > section.cta,
+main > article > section.cta {
+    margin: 5.5rem auto;
+  }
 }
 
 h1 {
@@ -696,19 +745,19 @@ h1 {
 
 h2 {
   font: var(--heading-2);
-  margin: 1.6rem 0 1.2rem;
+  margin: 3rem 0 1rem;
   color: var(--text-color-1);
 }
 
 h3 {
   font: var(--heading-3);
-  margin: 1.2rem 0 1rem;
+  margin: 1.5rem 0 0.75rem;
   color: var(--text-color-1);
 }
 
 h4 {
   font: var(--heading-4);
-  margin: 1rem 0 0.8rem;
+  margin: 1rem 0 0.5rem;
   color: var(--text-color-1);
 }
 
@@ -720,31 +769,23 @@ a:hover {
 }
 
 p {
-  margin: 0.75rem 0 0;
+  margin: 0.5rem 0 0;
 }
 
 ul {
   margin: 0.75rem 0 0;
   padding: 0 0 0 1.2em;
   display: block;
+  list-style: disc;
 }
 ul li {
-  display: block;
   position: relative;
 }
 ul li:not(:first-child) {
   margin: 0.375rem 0 0;
 }
-ul li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  margin-left: -1.1em;
-  margin-top: 0.6em;
-  width: 8px;
-  height: 8px;
-  background: var(--text-color-4);
-  transform: rotate(45deg);
+ul li::marker {
+  color: var(--text-color-2);
 }
 ul ul {
   margin: 0;
@@ -756,6 +797,7 @@ figure {
 }
 figure img {
   max-width: 100%;
+  box-shadow: var(--shadow-2);
 }
 
 code {
@@ -766,11 +808,27 @@ code {
   border-radius: 3px;
 }
 
+pre.wrap > code {
+  white-space: pre-wrap;
+}
+pre > code {
+  font: 0.8rem/1.5em "Fira Code";
+  background: none;
+  padding: 0;
+  display: block;
+}
 pre > code.hljs {
-  font: 0.95rem/1.5em "Fira Code";
-  background: unset;
-  padding: unset;
   border-radius: unset;
+}
+@media (min-width: 1024px) {
+  pre {
+    margin: 2rem -110px;
+  }
+  pre > code {
+    padding: 1.2rem;
+    background: var(--code-background);
+    overflow: visible;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

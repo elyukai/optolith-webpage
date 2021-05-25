@@ -9,6 +9,8 @@ return [
     ],
     'name' => 'English',
     'translations' => [
+        'all pages' => 'All pages',
+        'change language' => 'Change language',
         'community' => 'Community',
         'email' => 'E-Mail',
         'phone' => 'Phone',

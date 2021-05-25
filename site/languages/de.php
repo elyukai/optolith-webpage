@@ -9,7 +9,8 @@ return [
     ],
     'name' => 'Deutsch',
     'translations' => [
-        'community' => 'Community',
+        'all pages' => 'Alle Seiten',
+        'change language' => 'Sprache ändern',
         'email' => 'E-Mail',
         'phone' => 'Telefon',
     ],

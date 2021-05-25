@@ -25,18 +25,19 @@ button {
 a.btn.btn--primary,
 button.primary {
   color: var(--background-color);
-  border-color: var(--text-color-1);
+  border-color: transparent;
   background-color: var(--text-color-1);
+  box-shadow: var(--shadow-1);
 
   &:hover {
     color: var(--background-color);
-    border-color: var(--link-color);
+    border-color: transparent;
     background-color: var(--link-color);
   }
 
   &:active {
     color: var(--background-color);
-    border-color: var(--link-color-active);
+    border-color: transparent;
     background-color: var(--link-color-active);
   }
 }

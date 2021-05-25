@@ -1,6 +1,9 @@
 title: Third-party licenses
 icon: ⚖
 fields:
+  headline:
+    type: text
+    help: If specified, it replaces the title on the page itself.
   licenses:
     label: Licenses
     type: structure

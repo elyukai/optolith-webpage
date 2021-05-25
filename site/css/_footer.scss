@@ -1,36 +1,24 @@
+@use "responsive";
+
 footer {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
-  margin-top: 2rem;
+  padding: 4.5rem var(--padding-x);
+  margin-top: 2.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5em;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "links"
+    "other-langs"
+    "legal";
+  align-items: end;
 
-  #footer-inner {
-    width: 100%;
-    max-width: var(--max-width);
-    padding: 0 1.5rem;
-    display: grid;
-    grid-template-areas:
-      "links logo"
-      "other-langs logo"
-      "legal legal";
-    grid-template-columns: 1fr 4rem;
-    grid-template-rows: repeat(3, auto);
-    gap: 1.5rem;
-
-    @media (min-width: 640px) {
-      grid-template-areas:
-        "links other-langs logo"
-        "legal legal logo";
-      grid-template-columns: 1fr 1fr 4rem;
-      grid-template-rows: repeat(2, auto);
-    }
+  .links {
+    grid-area: links;
   }
 
-  .legal {
-    color: var(--text-color-4);
-    font-size: 0.9em;
-    margin: 10px 0 0;
-    grid-area: legal;
+  .other-languages {
+    grid-area: other-langs;
   }
 
   ul {
@@ -40,33 +28,61 @@ footer {
     display: flex;
     flex-direction: column;
 
-    &.links {
-      grid-area: links;
-    }
-
-    &.other-languages {
-      grid-area: other-langs;
-    }
-
     li {
       &::before {
         display: none;
       }
 
-      a,
-      a:visited {
+      a {
         text-decoration: none;
-        color: var(--text-color-3);
-      }
+        color: var(--text-color-2);
 
-      a:hover {
-        color: var(--text-color-1);
+        &:hover {
+          color: var(--text-color-1);
+        }
       }
     }
   }
 
-  #footer-logo {
-    height: 4rem;
-    grid-area: logo;
+  .legal {
+    grid-area: legal;
+    color: var(--text-color-3);
+    margin: 0;
+  }
+
+  @media (min-width: responsive.$screen-sm) {
+    grid-template-areas:
+      "links other-langs"
+      "legal legal";
+
+    .other-languages {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: responsive.$screen-lg) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: 900px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "links links links other-langs other-langs other-langs"
+      ". . legal legal legal legal";
+    gap: 2.4rem 0;
+
+    .legal {
+      text-align: right;
+    }
+
+    .links ul {
+      // display: block;
+      // column-count: 2;
+      // column-gap: 0;
+
+      // li.odd-column {
+      //   padding-top: 1.775rem;
+      // }
+    }
   }
 }

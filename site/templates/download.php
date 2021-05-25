@@ -2,10 +2,10 @@
 
 <article>
   <?php snippet('intro') ?>
-  <div class="text">
-    <?= $page->text()->kt() ?>
-    <p><a class="btn" href="<?= $page->downloadlink()->html() ?>"><?= $page->downloadtext()->html() ?></a></p>
-  </div>
+
+  <section class="text"><?= $page->text()->kt() ?></section>
+
+  <section class="cta"><a href="<?= $page->downloadlink()->html() ?>" class="btn btn--primary"><?= $page->downloadtext()->html() ?></a></section>
 </article>
 
 <?php snippet('footer') ?>

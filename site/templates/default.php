@@ -2,9 +2,10 @@
 
 <article>
   <?php snippet('intro') ?>
-  <div class="text">
+
+  <section class="text">
     <?= $page->text()->kt() ?>
-  </div>
+  </section>
 </article>
 
 <?php snippet('footer') ?>

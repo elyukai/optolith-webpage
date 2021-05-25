@@ -2,7 +2,8 @@
 
 <article>
   <?php snippet('intro') ?>
-  <div class="text">
+
+  <section class="text">
     <?= $page->intro()->kt() ?>
 
     <address>
@@ -26,7 +27,7 @@
         </a>
       </dd>
     </dl>
-  </div>
+  </section>
 </article>
 
 <?php snippet('footer') ?>
