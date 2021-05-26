@@ -2,6 +2,10 @@ Title: Insertion Workflow
 
 ----
 
+Headline: 
+
+----
+
 Intro: Getting started with inserting new content and best practices.
 
 ----
@@ -34,7 +38,7 @@ The mapping is already provided for the [YAML plugin for Visual Studio Code](htt
 
 ### General structure of entries
 
-Each entry has its own file, which contains both the language-independent values (e.g. Improvement Cost or AP value) and the language-dependent values (e.g. rules text or name).
+Each entry has its own file, which contains both the language-independent values (e.g. Improvement Cost or AP value) and the language-dependent values (e.g. rules text or name). The latter ones are usually located inside `translations` keys, grouped by language identifier (`de-DE`, `en-US`, …). 
 
 ## Get started
 
@@ -47,6 +51,10 @@ Also, don't start with complex entries! Advantages, disadvantages, special abili
 Always feel free to ask for reviews or hints on the Discord server, if you feel you need some!
 
 ## What to watch out for
+
+### Unique identifiers
+
+The numeric identifiers of entries must be unique and continuous: An entry group usually starts with `1` and each number can only occur once. In the future, this will be checked by the validation tests inside the repository, but you need to watch out for this yourself, too, since you may need to reference your created entries in other entries (e.g. when entering prerequisites) and those references must be unambiguous to work properly. And by only checking this out online you may need to redo your identifier assignment, both for the entries themselves and all entries that reference them.
 
 ### Duplicates
 
