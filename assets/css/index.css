@@ -808,13 +808,17 @@ code {
   border-radius: 3px;
 }
 
+pre {
+  margin: 1.5rem calc(var(--padding-x) * -1);
+  background: var(--code-background);
+}
 pre.wrap > code {
   white-space: pre-wrap;
 }
 pre > code {
   font: 0.8rem/1.5em "Fira Code";
   background: none;
-  padding: 0;
+  padding: 1.2rem var(--padding-x);
   display: block;
 }
 pre > code.hljs {
@@ -825,9 +829,8 @@ pre > code.hljs {
     margin: 2rem -110px;
   }
   pre > code {
-    padding: 1.2rem;
-    background: var(--code-background);
     overflow: visible;
+    padding: 1.2rem;
   }
 }
 
