@@ -1,3 +1,10 @@
 {
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "[markdown]": {
+      "editor.wordWrap": "on",
+      "editor.quickSuggestions": false
+  },
+  "files.associations": {
+      "*.txt": "markdown"
+  }
 }
