@@ -2,6 +2,10 @@ Title: Decoding
 
 ----
 
+Headline: 
+
+----
+
 Intro: Understand and create new YAML decoders.
 
 ----
@@ -82,7 +86,7 @@ Only the `make` function or its variant should be exposed.
 
 ### Naming conventions
 
-- The language-specific tyüe is always named `translation`.
+- The language-specific type is always named `translation`.
 - The record containing all language-independent values as well as the translation map is called `multilingual` and the translation map is at the property `translations` (just like in the source).
 - A decoder for a specific type has the same name as the type.
 - The function resolving the translation map and returning the actual main type is called `make`.
