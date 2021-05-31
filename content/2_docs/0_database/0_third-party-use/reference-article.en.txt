@@ -1,0 +1,37 @@
+Title: Third-party use
+
+----
+
+Intro: Using the database in your own project.
+
+----
+
+Text:
+
+If you're using the Optolith database for your own project, this page is for you. Here you'll find some best practices and things to watch out for when working with the database.
+
+Also, if you've worked with the database previously, feel free to share your insights here as well!
+
+## Breaking Changes
+
+Optolith follows [semantic versioning](https://semver.org/). This means you can rely on the `MAJOR` version of Optolith to see if there are breaking changes. But it is also important to know which changes **are** considered breaking and which **are not**.
+
+### Enum-like structures
+
+New or removed cases for enum-like struktures are always considered `MAJOR` changes.
+
+### File names
+
+File names are only meant as a help for database editors and thus may be changed just by `PATCH` releases. The numeric identifier part of the equals the `id` property of the entry (which is ensured by tests). It is the safest to rely on the file contents only.
+
+### Magical Tradition placeholders
+
+Magical Tradition placeholders exist because there may be traditions mentioned in spellworks where there is no tradition special ability available yet. Once they get a proper tradition special ability, it will be added and all spellworks are updated to match the new special ability (which is probably going to have a different numeric identifier as well). The placeholder will stay until the next `MAJOR` and it will contain the numeric identifier of the new tradition special ability as a reference. This process requires a `MINOR` version bump.
+
+### Properties
+
+Changes that will violate the `additionalProperties: true` setting from schemes of previous versions are considered `MINOR` changes. This is due to the fact that the property is used to ease manual data input. Properties may be added freely. Removing required properties or marking required properties as optional are still considered `MAJOR`.
+
+## Credits
+
+Lastly, please don't forget to credit The Optolith Project, since a lot of work and ❤ went into this database. Thank you! 🥰

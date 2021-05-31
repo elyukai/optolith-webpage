@@ -5,6 +5,7 @@ Title: Optolith
 Headerlinks:
 
 - download
+- docs
 
 ----
 

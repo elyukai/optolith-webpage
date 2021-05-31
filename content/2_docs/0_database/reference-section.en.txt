@@ -28,7 +28,7 @@ There sites will cover a lot of questions you may have. Let's dive in!
 
 ## External use
 
-- (link: docs/database/using-the-database-in-your-own-project text: Using the database in your own project) gives you some hints and recommendations on how to use the Optolith database in your own projects.
+- (link: docs/database/third-party-use text: Using the database in your own project) gives you some hints and recommendations on how to use the Optolith database in your own projects.
 
 ----
 

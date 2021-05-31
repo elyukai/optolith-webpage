@@ -41,7 +41,9 @@ body > header {
     list-style: none outside none;
 
     li {
-      margin-left: 0.8rem;
+      &, &:not(:first-child) {
+        margin: 0 0 0 0.8rem;
+      }
 
       &::before {
         display: none;

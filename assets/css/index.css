@@ -238,8 +238,8 @@ body > header nav ul {
   align-items: center;
   list-style: none outside none;
 }
-body > header nav ul li {
-  margin-left: 0.8rem;
+body > header nav ul li, body > header nav ul li:not(:first-child) {
+  margin: 0 0 0 0.8rem;
 }
 body > header nav ul li::before {
   display: none;
@@ -273,6 +273,33 @@ body > header nav ul li a:hover {
     height: 2.4rem;
     margin-left: -0.15rem;
   }
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-color-1);
+}
+h1 code, h2 code, h3 code, h4 code {
+  font-weight: 500;
+}
+
+h1 {
+  font: var(--heading-1);
+  margin: 0;
+}
+
+h2 {
+  font: var(--heading-2);
+  margin: 3rem 0 1rem;
+}
+
+h3 {
+  font: var(--heading-3);
+  margin: 1.5rem 0 0.75rem;
+}
+
+h4 {
+  font: var(--heading-4);
+  margin: 1rem 0 0.5rem;
 }
 
 a.btn,
@@ -352,6 +379,11 @@ nav.breadcrumbs ol li:not(:last-child)::after {
 }
 nav.breadcrumbs ol li a {
   display: block;
+}
+@media (min-width: 1024px) {
+  nav.breadcrumbs {
+    margin-right: -150px;
+  }
 }
 
 section.reference-children {
@@ -735,30 +767,6 @@ main > article > section.cta > .btn {
 main > article > section.cta {
     margin: 5.5rem auto;
   }
-}
-
-h1 {
-  font: var(--heading-1);
-  margin: 0;
-  color: var(--text-color-1);
-}
-
-h2 {
-  font: var(--heading-2);
-  margin: 3rem 0 1rem;
-  color: var(--text-color-1);
-}
-
-h3 {
-  font: var(--heading-3);
-  margin: 1.5rem 0 0.75rem;
-  color: var(--text-color-1);
-}
-
-h4 {
-  font: var(--heading-4);
-  margin: 1rem 0 0.5rem;
-  color: var(--text-color-1);
 }
 
 a {

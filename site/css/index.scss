@@ -2,6 +2,7 @@
 @use "fonts";
 @use "globals";
 @use "header";
+@use "headings";
 @use "buttons";
 @use "docs";
 @use "highlight";
@@ -99,30 +100,6 @@ main {
       }
     }
   }
-}
-
-h1 {
-  font: var(--heading-1);
-  margin: 0;
-  color: var(--text-color-1);
-}
-
-h2 {
-  font: var(--heading-2);
-  margin: 3rem 0 1rem;
-  color: var(--text-color-1);
-}
-
-h3 {
-  font: var(--heading-3);
-  margin: 1.5rem 0 0.75rem;
-  color: var(--text-color-1);
-}
-
-h4 {
-  font: var(--heading-4);
-  margin: 1rem 0 0.5rem;
-  color: var(--text-color-1);
 }
 
 a {

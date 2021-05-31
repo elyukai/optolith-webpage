@@ -1,3 +1,5 @@
+@use "responsive";
+
 nav.breadcrumbs {
   margin: 0 0 0.75rem;
   font-size: 0.8rem;
@@ -35,6 +37,10 @@ nav.breadcrumbs {
         display: block;
       }
     }
+  }
+
+  @media (min-width: responsive.$screen-lg) {
+    margin-right: -150px;
   }
 }
 
