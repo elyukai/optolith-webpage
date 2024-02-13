@@ -47,5 +47,10 @@ Icon
 # ---------------
 /site/config/.license
 
+# Composer
+# ---------------
+/kirby
+/vendor
+
 # Node
 node_modules
