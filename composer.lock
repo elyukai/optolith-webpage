@@ -213,16 +213,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.10.0",
+            "version": "3.10.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "d2e98d7bc032d3a7d6dc0687de7d0b88140e8497"
+                "reference": "0a128e49eb98b7e28d58b21a2d5ac64ebdd023f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/d2e98d7bc032d3a7d6dc0687de7d0b88140e8497",
-                "reference": "d2e98d7bc032d3a7d6dc0687de7d0b88140e8497",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/0a128e49eb98b7e28d58b21a2d5ac64ebdd023f9",
+                "reference": "0a128e49eb98b7e28d58b21a2d5ac64ebdd023f9",
                 "shasum": ""
             },
             "require": {
@@ -311,7 +311,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-12-19T12:37:21+00:00"
+            "time": "2024-02-25T17:44:39+00:00"
         },
         {
             "name": "getkirby/composer-installer",
